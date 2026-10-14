@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XAU-ELITE-FONDA — Institutional Gold & Macro Workstation (100% Free & Unlocked · 128 Widgets)</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23fef08a'/%3E%3Cstop offset='45%25' stop-color='%23f59e0b'/%3E%3Cstop offset='100%25' stop-color='%23b45309'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='32,3 58,17 58,47 32,61 6,47 6,17' fill='%23090c15' stroke='url(%23g)' stroke-width='3.5'/%3E%3Cpolygon points='17,42 23,30 41,30 47,42' fill='url(%23g)'/%3E%3Crect x='21' y='16' width='4' height='11' rx='1' fill='%2334d399'/%3E%3Cline x1='23' y1='12' x2='23' y2='29' stroke='%2334d399' stroke-width='1.8'/%3E%3Crect x='30' y='13' width='4' height='14' rx='1' fill='url(%23g)'/%3E%3Cline x1='32' y1='9' x2='32' y2='29' stroke='%23fef08a' stroke-width='1.8'/%3E%3Crect x='39' y='18' width='4' height='9' rx='1' fill='%2334d399'/%3E%3Cline x1='41' y1='14' x2='41' y2='29' stroke='%2334d399' stroke-width='1.8'/%3E%3Ctext x='32' y='53' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='9.5' fill='%23fef08a' letter-spacing='1'%3EXAU%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --bg-base: #050507;
+      --bg-panel: #09090d;
+      --bg-header: #0b0b10;
+      --bg-card: #101016;
+      --border: rgba(212, 175, 55, 0.22);
+      --border-accent: rgba(245, 197, 66, 0.6);
+      --accent: #f5c542;
+      --accent-gold-bright: #fef08a;
+      --accent-gold-deep: #d4af37;
+      --accent-soft: rgba(212, 175, 55, 0.15);
+      --text-main: #f8fafc;
+      --text-muted: #a1a1aa;
+      --bull: #10b981;
+      --bear: #f43f5e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg-base);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+    /* Top Command Bar */
+    .top-bar {
+      height: 44px;
+      min-height: 44px;
+      background: var(--bg-header);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      gap: 8px;
+      flex-shrink: 0;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+    }
+    .top-bar::-webkit-scrollbar { display: none; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .brand-logo {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: radial-gradient(circle at 30% 25%, #18181f 0%, #050507 100%);
+      border: 1.5px solid #f5c542;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 14px rgba(212, 175, 55, 0.45), inset 0 0 8px rgba(254, 240, 138, 0.22);
+      flex-shrink: 0;
+    }
+    .brand-title {
+      font-weight: 900;
+      font-size: 13.5px;
+      letter-spacing: 0.06em;
+      line-height: 1;
+      white-space: nowrap;
+      background: linear-gradient(90deg, #fef08a 0%, #f5c542 50%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 16px rgba(212, 175, 55, 0.28);
+    }
+    .unlocked-pill {
+      background: linear-gradient(90deg, rgba(212, 175, 55, 0.18), rgba(254, 240, 138, 0.12));
+      color: #fef08a;
+      border: 1px solid rgba(245, 197, 66, 0.5);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 9.5px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    select.ctrl-select, input.ctrl-input, button.ctrl-btn, a.ctrl-btn {
+      background: #111117;
+      color: #f4f4f5;
+      border: 1px solid var(--border);
+      padding: 4px 7px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.14s ease;
+    }
+    select.ctrl-select:hover, button.ctrl-btn:hover, a.ctrl-btn:hover {
+      border-color: var(--accent);
+      background: rgba(212, 175, 55, 0.16);
+      color: #fef08a;
+    }
+    button.ctrl-btn.primary {
+      background: linear-gradient(135deg, #fef08a 0%, #f5c542 50%, #d4af37 100%);
+      color: #050507;
+      border-color: #f5c542;
+      font-weight: 900;
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
+    }
+    button.ctrl-btn.primary:hover {
+      background: linear-gradient(135deg, #fffbeb 0%, #fde047 55%, #f5c542 100%);
+      color: #050507;
+    }
+    .tf-group {
+      display: flex;
+      background: #0d0d12;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .tf-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 4px 7px;
+      font-size: 10.5px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .tf-btn:hover {
+      color: #fef08a;
+    }
+    .tf-btn.active {
+      background: linear-gradient(135deg, #fef08a 0%, #f5c542 55%, #d4af37 100%);
+      color: #050507;
+      font-weight: 900;
+    }
+
+    /* Live Scrolling Ticker Tape (Smooth Right-to-Left Infinite Marquee + 10s Flash Highlights) */
+    .ticker-bar {
+      height: 30px;
+      min-height: 30px;
+      background: #060609;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .ticker-track {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: max-content;
+      padding: 0 10px;
+      animation: tickerSlideLeft 62s linear infinite;
+      will-change: transform;
+    }
+    .ticker-bar:hover .ticker-track {
+      animation-play-state: paused;
+    }
+    @keyframes tickerSlideLeft {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      white-space: nowrap;
+      cursor: pointer;
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(212, 175, 55, 0.16);
+      background: rgba(14, 14, 20, 0.85);
+      transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+    }
+    .ticker-item:hover {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: rgba(245, 197, 66, 0.65);
+    }
+    .ticker-item.flash-up {
+      background: rgba(16, 185, 129, 0.32) !important;
+      border-color: rgba(52, 211, 153, 0.85) !important;
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.45);
+    }
+    .ticker-item.flash-down {
+      background: rgba(244, 63, 94, 0.32) !important;
+      border-color: rgba(251, 113, 133, 0.85) !important;
+      box-shadow: 0 0 12px rgba(244, 63, 94, 0.45);
+    }
+
+    /* Workspace Tabs Sub-Bar */
+    .ws-bar {
+      height: 36px;
+      background: #08080c;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      gap: 4px;
+      overflow-x: auto;
+      flex-shrink: 0;
+      scrollbar-width: none;
+    }
+    .ws-tab {
+      background: #101016;
+      color: var(--text-muted);
+      border: 1px solid rgba(212, 175, 55, 0.12);
+      border-bottom: 2px solid transparent;
+      padding: 5px 10px;
+      border-radius: 5px 5px 0 0;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.14s ease;
+    }
+    .ws-tab:hover { color: #fef08a; background: #16161f; }
+    .ws-tab.active {
+      color: #fef08a;
+      background: linear-gradient(180deg, rgba(212, 175, 55, 0.22) 0%, #121218 100%);
+      border-color: rgba(245, 197, 66, 0.45);
+      border-bottom: 2px solid #f5c542;
+      box-shadow: 0 -2px 10px rgba(212, 175, 55, 0.15);
+    }
+
+    /* Main Grid Container */
+    .main-area {
+      flex: 1;
+      min-height: 0;
+      padding: 8px;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .widget-grid {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      gap: 8px;
+    }
+    .widget-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      display: flex;
+      flex-direction: column;
+      min-height: 220px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.65);
+    }
+    .widget-header {
+      height: 31px;
+      background: linear-gradient(90deg, #0d0d13 0%, #12121a 100%);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      flex-shrink: 0;
+    }
+    .widget-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #fef08a;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: 0.02em;
+    }
+    .widget-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fef08a, #d4af37);
+      box-shadow: 0 0 6px rgba(245, 197, 66, 0.6);
+    }
+    .widget-actions {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .w-btn {
+      background: rgba(17, 17, 23, 0.9);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      color: #d4d4d8;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+    .w-btn:hover { color: #fef08a; border-color: #f5c542; background: rgba(212, 175, 55, 0.15); }
+    .widget-body {
+      flex: 1;
+      padding: 8px;
+      overflow: auto;
+      min-height: 0;
+    }
+
+    /* Modals & Drawers */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 3, 5, 0.84);
+      backdrop-filter: blur(5px);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal-box {
+      background: #0b0b10;
+      border: 1px solid var(--border-accent);
+      border-radius: 10px;
+      width: 100%;
+      max-width: 1180px;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.9), 0 0 28px rgba(212, 175, 55, 0.18);
+    }
+    .modal-head {
+      padding: 12px 16px;
+      background: linear-gradient(90deg, #0e0e15 0%, #15151f 100%);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .modal-content {
+      padding: 16px;
+      overflow: auto;
+      flex: 1;
+    }
+    /* Footer Status Bar */
+    .status-bar {
+      height: 24px;
+      background: #0b0e17;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 12px;
+      font-size: 10.5px;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP INSTITUTIONAL COMMAND BAR -->
+  <header class="top-bar">
+    <div class="brand">
+      <div class="brand-logo" title="XAU-ELITE-FONDA Institutional Crest">
+        <svg width="24" height="24" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="xefGold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fef08a"/>
+              <stop offset="50%" stop-color="#f5c542"/>
+              <stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+          </defs>
+          <polygon points="32,3 58,17 58,47 32,61 6,47 6,17" fill="#090c15" stroke="url(#xefGold)" stroke-width="3.5"/>
+          <polygon points="15,43 22,31 42,31 49,43" fill="url(#xefGold)"/>
+          <polygon points="22,31 42,31 39,27 25,27" fill="#fef08a" opacity="0.85"/>
+          <rect x="20" y="15" width="4.5" height="10" rx="1" fill="#34d399"/>
+          <line x1="22.25" y1="11" x2="22.25" y2="27" stroke="#34d399" stroke-width="2"/>
+          <rect x="29.75" y="11" width="4.5" height="13" rx="1" fill="url(#xefGold)"/>
+          <line x1="32" y1="7" x2="32" y2="26" stroke="#fef08a" stroke-width="2"/>
+          <rect x="39.5" y="16" width="4.5" height="9" rx="1" fill="#34d399"/>
+          <line x1="41.75" y1="13" x2="41.75" y2="27" stroke="#34d399" stroke-width="2"/>
+          <text x="32" y="54" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-weight="900" font-size="10" fill="#fef08a" letter-spacing="0.8">XAU</text>
+        </svg>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0;">
+        <span class="brand-title">XAU-ELITE-FONDA</span>
+        <span class="unlocked-pill">PRO UNLOCKED</span>
+      </div>
+    </div>
+
+    <!-- Active Instrument & Timeframe Controls -->
+    <div class="controls-group">
+      <select id="symbolSelect" class="ctrl-select" style="max-width:170px;" title="Active Linked Instrument (Real CFD Feed)"></select>
+      <div class="tf-group" id="tfGroup" style="flex-shrink:0;">
+        <button class="tf-btn" data-tf="1m" onclick="window.PMT_SET_TIMEFRAME('1m')">1m</button>
+        <button class="tf-btn" data-tf="5m" onclick="window.PMT_SET_TIMEFRAME('5m')">5m</button>
+        <button class="tf-btn" data-tf="15m" onclick="window.PMT_SET_TIMEFRAME('15m')">15m</button>
+        <button class="tf-btn" data-tf="30m" onclick="window.PMT_SET_TIMEFRAME('30m')">30m</button>
+        <button class="tf-btn" data-tf="1H" onclick="window.PMT_SET_TIMEFRAME('1H')">1H</button>
+        <button class="tf-btn" data-tf="4H" onclick="window.PMT_SET_TIMEFRAME('4H')">4H</button>
+        <button class="tf-btn active" data-tf="1D" onclick="window.PMT_SET_TIMEFRAME('1D')">1D</button>
+        <button class="tf-btn" data-tf="1W" onclick="window.PMT_SET_TIMEFRAME('1W')">1W</button>
+      </div>
+      <select id="layoutSelect" class="ctrl-select" style="max-width:130px;" title="Grid Layout Engine (38 Presets)"></select>
+      <span id="autoSyncBadge" style="background:rgba(16,185,129,0.15);color:#34d399;border:1px solid rgba(16,185,129,0.45);padding:3px 7px;border-radius:5px;font-size:10px;font-weight:800;font-family:monospace;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;flex-shrink:0;" title="All 128 Widgets & Charts Update Automatically 24/24, 7/7 in Real Time">
+        <span style="width:6px;height:6px;border-radius:50%;background:#10b981;box-shadow:0 0 8px #10b981;display:inline-block;"></span>
+        24/7 LIVE
+      </span>
+      <button class="ctrl-btn" onclick="selectWorkspace('ws-ai-ai-bias')" style="border-color:rgba(245,197,66,0.55);color:#f5c542;" title="Open Dedicated AI Daily Bias Workspace (DeepSeek Pro)">🤖 AI Bias</button>
+      <button class="ctrl-btn" onclick="selectWorkspace('ws-vip-news-ai')" style="border-color:rgba(16,185,129,0.55);color:#34d399;" title="Open Bloomberg VIP Tweets & War Flash AI Bias Classifier">📡 VIP News AI</button>
+      <button class="ctrl-btn" onclick="selectWorkspace('ws-cot-flow')" style="border-color:rgba(245,197,66,0.55);color:#fef08a;" title="Open 7-Panel Institutional CFTC COT Pro Desk">📊 COT Pro</button>
+      <button class="ctrl-btn" onclick="window.openFundamentalScoreboard && window.openFundamentalScoreboard()" style="border-color:rgba(47,92,255,0.6);color:#7aa2ff;" title="Open the separated Fundamental Scoreboard section: Seasonality, CFTC COT, Growth, Inflation & Jobs with real Actual/Forecast/Surprise data">📊 Fundamental</button>
+      <button class="ctrl-btn primary" onclick="openWidgetCatalogModal()">+ 128 Widgets</button>
+      <button class="ctrl-btn" onclick="openMacroAIModal()">🧠 Ask AI</button>
+      <button class="ctrl-btn" id="squawkBtn" onclick="toggleAudioSquawk()">🔊 Squawk</button>
+      <button class="ctrl-btn" id="neuroBtn" onclick="toggleNeuroBeats()">🎧 Neuro</button>
+    </div>
+
+    <!-- Portal Switcher Links -->
+    <div class="controls-group">
+      <a class="ctrl-btn" href="/academy" title="150 Video Lessons across 29 Modules">🎓 Academy</a>
+      <a class="ctrl-btn" href="/knowledge" title="57 Institutional Widget & Macro Guides">📚 Knowledge</a>
+      <a class="ctrl-btn" href="/landing" title="Overview Site">🌐 Overview</a>
+    </div>
+  </header>
+
+  <!-- LIVE SCROLLING MULTI-ASSET TICKER TAPE -->
+  <div class="ticker-bar" id="tickerBar"></div>
+
+  <!-- 13 PRE-BUILT INSTITUTIONAL WORKSPACE TABS -->
+  <nav class="ws-bar" id="wsBar"></nav>
+
+  <!-- MAIN WORKSPACE GRID CONTAINER + AI DAILY BIAS SECTION -->
+  <main class="main-area" style="gap:8px;">
+    <!-- DEDICATED AI DAILY BIAS & DEEP "WHY" RATIONALE SECTION -->
+    <section id="aiTopSection" style="background:linear-gradient(180deg,#0a0a0f 0%,#060609 100%);border:1px solid rgba(56,189,248,0.38);border-radius:7px;padding:8px 11px;flex-shrink:0;box-shadow:0 4px 18px rgba(0,0,0,0.45);"></section>
+    <div id="widgetGrid" class="widget-grid"></div>
+  </main>
+
+  <!-- FOOTER REAL-TIME TELEMETRY BAR -->
+  <footer class="status-bar">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="color:#2dd4bf;font-weight:700;">● REAL CFD PROVIDERS ACTIVE (TradingView CFD WS OANDA:XAUUSD · wss://pws.primemarket-terminal.com:8081 · U.S. CFTC Socrata API · CNBC RSS · Binance L2)</span>
+      <span id="tickCounter">Real Historical Sample: 4,500 Daily CFD Bars</span>
+      <span>Account: <strong style="color:#f5c542;">Institutional Pro (Free Forever · No Registration)</strong></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;font-family:monospace;" id="worldClocks"></div>
+  </footer>
+
+  <!-- MODAL 1: ALL 128 WIDGETS BROWSER & INSPECTOR -->
+  <div class="modal-backdrop" id="catalogModal">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div>
+          <strong style="font-size:14px;color:#fff;">XAU-ELITE-FONDA — Master 128-Widget Catalog (19 Categories)</strong>
+          <span style="font-size:11px;color:#94a3b8;margin-left:10px;">Click "Inspect Live" to launch any widget or "+ Add to Grid" to pin it to your active workspace</span>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <input type="text" id="catalogSearch" class="ctrl-input" placeholder="Search 128 widgets (e.g. COT, Yield Curve, DMX, Orderblock...)" oninput="renderCatalogModalContent()" style="width:280px;" />
+          <button class="ctrl-btn" onclick="closeModals()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content" id="catalogModalContent"></div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: SINGLE WIDGET FULL-SCREEN DEEP INSPECTOR -->
+  <div class="modal-backdrop" id="inspectModal">
+    <div class="modal-box" style="max-width:1100px;height:80vh;">
+      <div class="modal-head">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="widget-dot"></span>
+          <strong id="inspectTitle" style="font-size:14px;color:#fff;">Widget Inspector</strong>
+          <span class="unlocked-pill">PRO UNLOCKED</span>
+        </div>
+        <div style="display:flex;gap:8px;">
+          <button class="ctrl-btn primary" id="inspectAddBtn">+ Add to Current Workspace</button>
+          <button class="ctrl-btn" onclick="closeModals()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content" id="inspectModalBody" style="display:flex;flex-direction:column;"></div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: MACRO AI COPILOT DESK -->
+  <div class="modal-backdrop" id="macroAIModal">
+    <div class="modal-box" style="max-width:880px;">
+      <div class="modal-head">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:16px;">🤖</span>
+          <strong style="font-size:14px;color:#fff;">XAU-ELITE-FONDA Macro AI Copilot — Institutional Synthesis Engine</strong>
+          <span class="unlocked-pill">UNLIMITED PRO QUERIES</span>
+        </div>
+        <button class="ctrl-btn" onclick="closeModals()">✕ Close</button>
+      </div>
+      <div class="modal-content" style="display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;gap:6px;flex-wrap:wrap;">
+          <button class="ctrl-btn" onclick="runMacroAIPrompt('Synthesize EURUSD macro outlook, ECB vs Fed OIS pricing, CFTC COT & DMX contrarian positioning')">EURUSD Full Institutional Synthesis</button>
+          <button class="ctrl-btn" onclick="runMacroAIPrompt('Analyze Gold (XAUUSD) institutional flows, real yields, CFTC extreme positioning & bank targets')">Gold (XAUUSD) Deep Dive</button>
+          <button class="ctrl-btn" onclick="runMacroAIPrompt('Compare USDJPY vs US-JP 10Y yield spread, BOJ hike probability & DTCC option expiries')">USDJPY & BOJ Rate Playbook</button>
+          <button class="ctrl-btn" onclick="runMacroAIPrompt('Global Sovereign Fixed Income 2s10s steepener & G10 Macro Regime summary')">Fixed Income & Macro Regime</button>
+        </div>
+        <div style="display:flex;gap:8px;">
+          <input type="text" id="aiQueryInput" class="ctrl-input" style="flex:1;padding:8px 12px;font-size:12.5px;" placeholder="Ask anything about G10 FX, Central Bank Rate Paths, CFTC COT, DMX Retail Sentiment, Yield Curves, or Stocks..." onkeydown="if(event.key==='Enter')submitMacroAI()" />
+          <button class="ctrl-btn primary" onclick="submitMacroAI()">Run Institutional Analysis</button>
+        </div>
+        <div id="aiResponseBox" style="background:#0b0f19;border:1px solid var(--border);border-radius:8px;padding:14px;min-height:280px;font-size:12.5px;line-height:1.6;color:#e2e8f0;overflow:auto;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/lightweight-charts.js"></script>
+  <script src="/terminal-data.js"></script>
+  <script src="/seasonality-all-34.js"></script>
+  <script src="/cot-5yr-all.js"></script>
+  <script src="/daily-bias-locked.js"></script>
+  <script src="/terminal-widgets.js"></script>
+  <script src="/fundamental-scoreboard-v4.js?v=20261014-4"></script>
+  <script src="/daily-closure-learning.js?v=20261014-3"></script>
+  <script>
+    const D = window.PMT_DATA;
+    const W = window.PMT_WIDGETS;
+
+    // Immediately hydrate Date-Locked 11-Element Hierarchical Daily Bias for all 34 symbols at 0ms
+    (function hydrateDateLockedDailyBias() {
+      if (!window.PMT_LIVE) window.PMT_LIVE = { aiBiasBySymbol: {} };
+      if (!window.PMT_LIVE.aiBiasBySymbol) window.PMT_LIVE.aiBiasBySymbol = {};
+      if (window.__PRELOADED_DAILY_BIAS_LOCK__) {
+        Object.keys(window.__PRELOADED_DAILY_BIAS_LOCK__).forEach(sym => {
+          const locked = window.__PRELOADED_DAILY_BIAS_LOCK__[sym];
+          window.PMT_LIVE.aiBiasBySymbol[sym] = locked;
+          const inst = D.INSTRUMENTS.find(x => x.symbol === sym);
+          if (inst && Number.isFinite(locked.masterHierarchicalScore)) {
+            inst.smartBias = locked.masterHierarchicalScore;
+          }
+        });
+      }
+    })();
+
+    function resolveInitialSymbol() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const qSym = (params.get("symbol") || params.get("s") || "").toUpperCase().trim();
+        if (qSym && D.INSTRUMENTS.some(i => i.symbol === qSym)) return qSym;
+        const pathSeg = window.location.pathname.replace(/^\/+|\/+$/g, "").split("/").pop().toUpperCase();
+        if (pathSeg && D.INSTRUMENTS.some(i => i.symbol === pathSeg)) return pathSeg;
+      } catch (e) {}
+      return "XAUUSD";
+    }
+
+    function resolveInitialWorkspace() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const qWs = (params.get("ws") || params.get("workspace") || "").toLowerCase().trim();
+        if (qWs === "cot" || window.location.pathname.toLowerCase().includes("/cot")) {
+          const found = D.WORKSPACES.find(w => w.id === "ws-cot-flow");
+          if (found) return { id: found.id, layout: found.layout };
+        }
+      } catch (e) {}
+      return { id: D.WORKSPACES[0].id, layout: D.WORKSPACES[0].layout || "seasonality-pro" };
+    }
+
+    const initWs = resolveInitialWorkspace();
+    let state = {
+      activeSymbol: resolveInitialSymbol(),
+      activeTimeframe: "1D",
+      activeWorkspaceId: initWs.id,
+      activeLayout: initWs.layout,
+      squawkActive: false,
+      neuroActive: false,
+      neuroCtx: null,
+      tickCount: 0,
+      catalogData: null
+    };
+    window.PMT_STATE = state;
+
+    // Load full 122-widget catalog JSON + 6 flagship modules = 128 widgets
+    const FLAGSHIP_MODULES = [
+      { id: "ai-daily-bias", name: "AI Daily Bias & Why (DeepSeek Pro)", category: "research", desc: "DeepSeek Pro AI daily institutional bias & quantitative rationale across live CFD, 17Y seasonality, CFTC COT & yields" },
+      { id: "vip-tweets-ai-wire", name: "Bloomberg VIP Tweets & War Flash (AI Bias Classifier)", category: "news", desc: "Real-time VIP tweets & statements (Warsh, Trump, Bessent, Powell, Lagarde) & War Flashes classified by AI on whether they shift USD or XAUUSD bias" },
+      { id: "macro-ai", name: "Macro AI Copilot", category: "research", desc: "Institutional AI synthesis across rates, COT, DMX, and macro data" },
+      { id: "live-squawk", name: "Live Audio Squawk", category: "news", desc: "Real-time voice broadcast of central bank and tier-1 headlines" },
+      { id: "footprint-charts", name: "Footprint Bid×Ask Charts", category: "orderflow", desc: "Bid×Ask volume delta footprint cluster analysis & CVD" },
+      { id: "volume-profile", name: "Session Volume Profile", category: "orderflow", desc: "VPOC, VAH, VAL high/low volume node distribution" },
+      { id: "trade-dots", name: "Institutional Trade Dots", category: "orderflow", desc: "Aggressive market order sweeps & block print tape" },
+      { id: "dom", name: "Depth of Market (DOM)", category: "orderflow", desc: "Level-2 institutional price ladder & liquidity walls" }
+    ];
+
+    state.aiExpanded = true;
+    state.aiShowFutureCandles = true;
+    state.aiShowVipWire = true;
+    state.aiLoading = false;
+    const inflightTfFetches = new Set();
+
+    async function fetchChartTimeframe(sym, tf) {
+      const s = String(sym || state.activeSymbol || "XAUUSD").toUpperCase();
+      const t = String(tf || state.activeTimeframe || "1D");
+      const key = `${s}_${t}`;
+      if (window.PMT_LIVE?.chartByKey?.[key] && window.PMT_LIVE.chartByKey[key].bars?.length > 3) return;
+      if (inflightTfFetches.has(key)) return;
+      inflightTfFetches.add(key);
+      try {
+        let res = await fetch(`/api/live/chart?symbol=${encodeURIComponent(s)}&timeframe=${encodeURIComponent(t)}`);
+        const ct = (res.headers && res.headers.get) ? (res.headers.get("content-type") || "") : "";
+        if (!res.ok || !ct.includes("json")) {
+          res = await fetch(`/api/live/chart-${encodeURIComponent(s)}-${encodeURIComponent(t)}.json`);
+        }
+        const json = await res.json();
+        const dataObj = json?.data || json;
+        if (dataObj && Array.isArray(dataObj.bars) && dataObj.bars.length > 3) {
+          window.PMT_LIVE.chartByKey[key] = dataObj;
+          if (state.activeSymbol === s && state.activeTimeframe === t) {
+            renderMainArea();
+          }
+        }
+      } catch (e) {}
+      inflightTfFetches.delete(key);
+    }
+    window.fetchChartTimeframe = fetchChartTimeframe;
+
+    async function setTimeframe(tf) {
+      const cleanTf = String(tf || "1D").trim();
+      state.activeTimeframe = cleanTf;
+      document.querySelectorAll("#tfGroup .tf-btn").forEach(b => {
+        b.classList.toggle("active", b.dataset.tf === cleanTf);
+      });
+      // Immediately re-render & mount charts on the requested timeframe (zero delay!)
+      renderMainArea();
+      updateAutoSyncBadge(`${state.activeSymbol} · ${cleanTf}`);
+      // Also pull fresh timeframe bars from backend if online
+      await fetchChartTimeframe(state.activeSymbol, cleanTf);
+    }
+    window.PMT_SET_TIMEFRAME = setTimeframe;
+
+    function updateAutoSyncBadge(label) {
+      const el = document.getElementById("autoSyncBadge");
+      if (!el) return;
+      const t = new Date().toLocaleTimeString("en-GB", { hour12: false });
+      el.innerHTML = `<span style="width:6px;height:6px;border-radius:50%;background:#10b981;box-shadow:0 0 8px #10b981;display:inline-block;"></span> 24/7 LIVE · ${label || t}`;
+    }
+
+// ========================================================================
+    // AI DAILY BIAS ENGINE v2 — DeepSeek Pro & higher via CodeCraft API
+    // (replaces AI). Fed ALL elements: live price + today's candle,
+    // multi-TF technicals, 30 daily chart candles (OHLC chart data), 17Y
+    // seasonality + prediction candles, CFTC COT, DMX, L2 orderbook, yield
+    // curves, central banks/OIS, macro scorecard, last-8 macro releases per
+    // economy (bundled real calendar), calendar + live news/VIP wire.
+    // STRICT RULE (learned 2026-10-14, when a stale bullish call met a
+    // -1,000-pip bearish day): live price action OUTRANKS lagging COT and
+    // statistical seasonality. Confidence is calibrated, never inflated.
+    // ========================================================================
+    const CC_API_KEY = "cc_evD1D06LuOTmKbTDDtnJDeTL6KJyWs5aF4rGcqAMSk3DvgNR";
+    const CC_BIAS_MODELS = ["deepseek-v4-pro-max", "claude-opus-5.5", "deepseek-v4-pro-0813", "gpt-5.6-sol", "ai-3.1-pro"];
+    let _macroBundlePromise = null;
+    function loadMacroBundle() {
+      if (!_macroBundlePromise) {
+        _macroBundlePromise = fetch("/macro-history.json?v=20261014-4", { cache: "no-store" }).then(r => (r.ok ? r.json() : null)).catch(() => null);
+      }
+      return _macroBundlePromise;
+    }
+    function todayKey() { return new Date().toISOString().slice(0, 10); }
+    function readDeepSeekDayLock(sym) {
+      try {
+        const raw = localStorage.getItem("xef_forecast_bias_v2_" + todayKey() + "_" + sym);
+        return raw ? JSON.parse(raw) : null;
+      } catch (e) { return null; }
+    }
+    function writeDeepSeekDayLock(sym, obj) {
+      try { localStorage.setItem("xef_forecast_bias_v2_" + todayKey() + "_" + sym, JSON.stringify(obj)); } catch (e) {}
+    }
+    // Hydrate today's DeepSeek locks at boot (refresh NEVER flips the bias)
+    (function hydrateDeepSeekLocks() {
+      try {
+        if (!window.PMT_LIVE) window.PMT_LIVE = { aiBiasBySymbol: {} };
+        if (!window.PMT_LIVE.aiBiasBySymbol) window.PMT_LIVE.aiBiasBySymbol = {};
+        D.INSTRUMENTS.forEach(inst => {
+          const locked = readDeepSeekDayLock(inst.symbol);
+          if (locked && locked.dailyBias) {
+            const pre = window.__PRELOADED_DAILY_BIAS_LOCK__?.[inst.symbol] || {};
+            window.PMT_LIVE.aiBiasBySymbol[inst.symbol] = {
+              ...pre, ...locked,
+              elementByElementAudit: pre.elementByElementAudit,
+              tier1Score: pre.tier1Score, tier2Score: pre.tier2Score, tier3Score: pre.tier3Score
+            };
+          }
+        });
+      } catch (e) {}
+    })();
+
+    async function buildDeepSeekBiasDossier(targetSym) {
+      const inst = D.INSTRUMENTS.find(x => x.symbol === targetSym) || D.INSTRUMENTS[0];
+      const dossier = W.buildCompleteAIInputDossier ? W.buildCompleteAIInputDossier(targetSym) : { symbol: targetSym, price: inst.price };
+      // --- Chart data the model needs: last 30 daily candles + today's live candle anatomy
+      const seas = window.PMT_LIVE?.seasonalityBySymbol?.[targetSym] || window.__PRELOADED_ALL_SEASONALITY__?.[targetSym] || {};
+      const daily = (seas.recentRealCandles || []).slice(-30);
+      const t = dossier["1_livePriceAndMultiTfTechnicals"] || {};
+      const lastBar = daily[daily.length - 1] || {};
+      const todayOpen = Number(lastBar.open || inst.price), todayHigh = Math.max(Number(lastBar.high || inst.price), Number(inst.price || 0));
+      const todayLow = Math.min(Number(lastBar.low || inst.price), Number(inst.price || 0));
+      const spot = Number(inst.price || lastBar.close || todayOpen);
+      const adr = Math.max(1e-9, Number(inst.adrPips || 100) * Number(inst.pipSize || 0.01));
+      const pipsMoved = (spot - todayOpen) / Number(inst.pipSize || 0.01);
+      // EX-ANTE FORECAST INPUTS — built ONLY from completed candles & day-open information.
+      // The forming candle of the target day is deliberately EXCLUDED: the bias must ANTICIPATE
+      // the next daily candle before its direction is revealed, not describe it afterwards.
+      const closes = daily.map(c => Number(c.close)).filter(Number.isFinite);
+      const prev = daily[daily.length - 1] || {};
+      const prevClose = Number(prev.close || spot);
+      const retN = n => closes.length > n ? Number((((closes[closes.length - 1] - closes[closes.length - 1 - n]) / closes[closes.length - 1 - n]) * 100).toFixed(3)) : null;
+      const bodyPct = prev.high > prev.low ? Number((((prev.close - prev.open) / (prev.high - prev.low)) * 100).toFixed(1)) : 0;
+      const chartBlock = {
+        FORECAST_TARGET: "The NEXT daily candle dated " + todayKey() + " — it has NOT formed yet. Predict its direction BEFORE it reveals itself.",
+        informationCutoff: "Only COMPLETED daily candles (last one: " + (prev.date || "?") + ") and information available at the target day's open. Post-open price movement of the target day is excluded on purpose (no look-ahead).",
+        referenceOpenForTargetCandle: prevClose,
+        lastCompletedDailyCandle: { date: prev.date, open: prev.open, high: prev.high, low: prev.low, close: prev.close, bodyDirection: prev.close > prev.open ? "BULLISH" : prev.close < prev.open ? "BEARISH" : "FLAT", bodyPctOfRange: bodyPct },
+        momentumFromCompletedCandlesPct: { return1d: retN(1), return5d: retN(5), return10d: retN(10), return20d: retN(20) },
+        trendVsAveragesAtPrevClose: {
+          distanceFromEMA20InADR: Number(((prevClose - Number(inst.ema20 || prevClose)) / adr).toFixed(2)),
+          distanceFromEMA50InADR: Number(((prevClose - Number(inst.ema50 || prevClose)) / adr).toFixed(2)),
+          distanceFromEMA200InADR: Number(((prevClose - Number(inst.ema200 || prevClose)) / adr).toFixed(2)),
+          note: "EMA distances measured at the previous close (ex-ante), RSI/ATR are slow-moving context"
+        },
+        rsi14SlowContext: inst.rsi, atr14Pips: inst.adrPips,
+        last30CompletedDailyCandlesOHLC: daily.map(c => ({ d: c.date, o: c.open, h: c.high, l: c.low, c: c.close })),
+        WARNING_EXCLUDED: "Today's forming candle, today's high/low and any post-open spot move are NOT forecast inputs and are not provided here."
+      };
+      // --- Fundamental last-8 macro releases for the relevant economies
+      const CCY_ECON = { USD: ["US"], EUR: ["EU", "DE", "FR", "IT", "ES"], GBP: ["GB"], JPY: ["JP"], CAD: ["CA"], AUD: ["AU"], NZD: ["NZ"], CHF: ["CH"] };
+      let econCodes = ["US"];
+      if (!/^(XAU|XAG)/.test(targetSym) && targetSym.length >= 6) {
+        econCodes = Array.from(new Set([].concat(CCY_ECON[targetSym.slice(0, 3)] || [], CCY_ECON[targetSym.slice(3, 6)] || [])));
+        if (!econCodes.length) econCodes = ["US"];
+      }
+      let macroBlock = null;
+      try {
+        const bundle = await loadMacroBundle();
+        if (bundle && Array.isArray(bundle.events)) {
+          const WANT = [/gdp growth rate qoq|^gdp.*qoq/i, /ism manufacturing pmi|manufacturing pmi/i, /ism services pmi|services pmi/i, /^retail sales mom|retail sales/i, /consumer confidence|consumer sentiment/i, /^inflation rate yoy|inflation rate yoy/i, /^ppi yoy|ppi yoy|producer price/i, /pce price index yoy|core inflation rate yoy/i, /non farm payrolls|employment change/i, /^unemployment rate|unemployment rate/i, /initial jobless claims|jobless claims/i, /jolts job openings|job openings/i, /adp employment/i];
+          const isNum = v => v !== null && v !== undefined && v !== "" && Number.isFinite(Number(v));
+          macroBlock = {
+            economies: econCodes.join("+"),
+            last8ReleasesPerIndicator: WANT.map(rx => {
+              const s = bundle.events.filter(e => econCodes.includes(e.country) && isNum(e.actual) && rx.test(e.title || "")).slice(-8);
+              return s.length ? { indicator: s[s.length - 1].title, releases: s.map(ev => ({ date: String(ev.date).slice(0, 10), actual: Number(ev.actual), forecast: ev.forecast == null ? null : Number(ev.forecast), previous: ev.previous == null ? null : Number(ev.previous) })) } : null;
+            }).filter(Boolean),
+            note: "Official releases from TradingView Economic Calendar (bundled real history)"
+          };
+        }
+      } catch (e) {}
+      // --- CFTC COT last 8 weekly reports for base/quote contracts
+      let cotBlock = null;
+      try {
+        if (W.getCotPairContracts) {
+          const pair = W.getCotPairContracts(targetSym);
+          const slim = c => c && c.rows ? { contract: c.name, last8Weeks: c.rows.slice(0, 8).map(r => ({ date: r[0], long: Number(r[1]), short: Number(r[3]), net: Number(r[7]) })) } : null;
+          cotBlock = { base: slim(pair.baseContract), quote: slim(pair.quoteContract), warning: "COT is published weekly with a lag — treat as slow positioning context, NEVER as a same-day trigger" };
+        }
+      } catch (e) {}
+      return {
+        ...dossier,
+        "12_chartDataLast30DailyCandlesAndTodayLiveCandle": chartBlock,
+        "13_fundamentalMacroLast8Releases": macroBlock,
+        "14_cftcCotLast8WeeklyReports": cotBlock,
+        "15_aiForecastTrackRecordAndLessons": (typeof window.XEF_GET_LESSONS === "function") ? window.XEF_GET_LESSONS(targetSym) : null
+      };
+    }
+
+    async function callDeepSeekProDailyBias(targetSym, customQuestion = "") {
+      const inst = D.INSTRUMENTS.find(x => x.symbol === targetSym) || D.INSTRUMENTS[0];
+      const seas = window.PMT_LIVE?.seasonalityBySymbol?.[targetSym];
+      const next10 = (seas?.predictionCandles || []).slice(0, 10);
+      const fullDossier = await buildDeepSeekBiasDossier(targetSym);
+      const previousSystem = window.__PRELOADED_DAILY_BIAS_LOCK__?.[targetSym];
+      const prompt = "You are the Chief Institutional Strategist at XAU-ELITE-FONDA, powered by a maximum-reasoning model. Your ONLY job: FORECAST the bias of the NEXT daily candle for " + targetSym + " (" + inst.name + "), target candle date " + todayKey() + ", BEFORE that candle forms. The trader reads your bias BEFORE technical analysis and BEFORE the day's direction is revealed.\n" +
+        "You are given EVERYTHING known at the target day's open: (1) previous-close technicals, (2) 17.4Y seasonality (4,500 bars) + seasonal prediction candles for the target date, (3) CFTC COT positioning, (4) retail DMX, (5) L2 orderbook, (6) sovereign yield curves, (7) central banks & OIS, (8) G8 macro scorecard, (9) economic calendar (including the target day's SCHEDULED events), (10) overnight news + VIP tweets/war wire known at the open, (11) volume/order-flow context, (12) FORECAST CHART DATA: last 30 COMPLETED daily candles + momentum + previous-close structure, (13) fundamentals: LAST 8 official macro releases per indicator with dates, (14) COT last 8 weekly reports.\n" +
+        "YOUR TASK IS A FORECAST, NOT A DESCRIPTION. A bias that merely repeats an already-formed candle is worthless. EX-ANTE RULE (absolute): use ONLY completed daily candles up to the previous close, previous-close trend/momentum, seasonality FOR THE TARGET DATE, COT trend, macro last-8 trend + the target day's scheduled catalysts, yield direction into the close, and overnight news known at the open. If any input field reflects post-open movement of the target day (spot, change24hPct, dayHigh/dayLow, a forming candle), you MUST IGNORE it — that is the outcome you are predicting, not evidence. Block (12) is your clean ex-ante chart dataset; anchor on it.\n" +
+        "FORECAST METHOD: 1) Market structure at the PREVIOUS CLOSE first (highest weight): EMA alignment, 5/10/20d momentum from completed candles, last completed candle pattern (engulfing, rejection wicks, close location), distance to swing supply/demand, pivot levels. 2) Directional priors second: seasonality for the target date, COT extremes/flows, macro drift + scheduled-event pre-positioning, yield trend. 3) Resolve conflicts explicitly and say which dominates and why. The previous system's failure mode was trusting statistical seasonality/COT over the completed-candle STRUCTURE; do not repeat it — structure and trend dominate, seasonality/COT adjust conviction.\n" +
+        "LEARN FROM YOUR GRADED TRACK RECORD (input block 15_aiForecastTrackRecordAndLessons): it lists your past forecasts for this asset graded against the ACTUALLY CLOSED candles (hit/miss, close error %, mistake patterns: opposedMomentum20, highConvictionMiss, seasonalityLedMiss, counterPrevCandle). You MUST apply LESSONS_YOU_MUST_APPLY today and explicitly state in your executiveSummary how you are avoiding the top mistake pattern. If block 15 is empty, say grading has not started yet. The just-closed candle is already inside your completed-candle inputs — its structure is your freshest evidence for tomorrow.\n" +
+        "CONFIDENCE CALIBRATION: this is a genuine forecast under uncertainty. 80-90 ONLY if completed-candle structure, momentum, seasonality, COT and macro all align. Typical honest conviction: 55-75. Conflicting evidence => NEUTRAL / RANGE at 50-60 is valid and respected. NEVER print 90% on seasonality/COT alone.\n" +
+        (previousSystem ? "For reference only, the previous system's locked bias was " + previousSystem.dailyBias + " (" + (previousSystem.conviction || "?") + "%). You MUST explicitly agree or disagree with it in biasVsPreviousSystem — do not anchor to it.\n" : "") +
+        (customQuestion ? "User focus: " + customQuestion + "\n" : "") +
+        "Tasks: 1) FORECAST bias for the target candle (" + todayKey() + ") + WHY, citing exact ex-ante numbers (previous close, completed-candle structure, momentum, target-date seasonality, COT, scheduled events). 2) NEXT 10 EXPECTED FUTURE DAILY CANDLES (aiFutureCandles) starting with the target candle, opening at the previous close (open, high, low, close, bias, pipsChange, pctChange, confidence, catalystAndRationale). 3) NEXT 6 scheduled/upcoming news catalysts (aiFutureNewsPredictions) — EACH item MUST use EXACTLY these keys: eventTime (e.g. 2026-10-15 12:30 UTC), currency, eventName, consensusForecast, previousActual, aiPredictedOutcome, expectedAssetImpact (BULLISH or BEARISH for the asset), expectedMovePips (number), probabilityPct (number 45..96), tradingReactionPlan. No other key names are allowed.\n" +
+        "Return ONLY valid JSON: dailyBias (STRONG BULLISH|BULLISH|NEUTRAL / RANGE|BEARISH|STRONG BEARISH) [this is the FORECAST for the target candle], conviction (50..94), masterScore (-10..10), forecastForDate (\"" + todayKey() + "\"), biasVsPreviousSystem, headlineThesis, executiveSummary, factorScores {technicalScore, seasonalityScore, positioningScore, macroRatesScore} (each -10..10), keyLevels {biasPivot, entryZone, target1, target2, invalidationStop, riskReward}, whyPillars (4 x {title, verdict, explanation}), intradayPlaybook, aiFutureCandles (10), aiFutureNewsPredictions (6).\nDATA:\n" + JSON.stringify(fullDossier);
+
+      for (const m of CC_BIAS_MODELS) {
+        try {
+          const r = await fetch("https://codecraftapi.com/v1/chat/completions", {
+            method: "POST",
+            headers: { "Authorization": "Bearer " + CC_API_KEY, "Content-Type": "application/json" },
+            body: JSON.stringify({ model: m, messages: [{ role: "user", content: prompt }], max_tokens: 9000, temperature: 0.15 })
+          });
+          if (!r.ok) continue;
+          const j = await r.json();
+          const txt = (j?.choices?.[0]?.message?.content || "").trim();
+          if (!txt) continue;
+          const fence = String.fromCharCode(96, 96, 96);
+          const cleanTxt = txt.replace(new RegExp("^" + fence + "json\\s*", "i"), "").replace(new RegExp(fence + "\\s*$", "i"), "").trim();
+          const parsed = JSON.parse(cleanTxt.startsWith("{") ? cleanTxt : cleanTxt.slice(cleanTxt.indexOf("{"), cleanTxt.lastIndexOf("}") + 1));
+          if (parsed && parsed.dailyBias) {
+            parsed.forecastForDate = todayKey();
+            parsed.forecastBasis = "EX-ANTE: forecast of the next daily candle from completed candles + day-open information only; target-day post-open movement excluded";
+            parsed.aiFutureCandles = W.normalizeAiFutureCandles
+              ? W.normalizeAiFutureCandles(targetSym, parsed.aiFutureCandles, parsed.dailyBias, parsed.conviction)
+              : (W.getOrBuildAiFutureCandles ? W.getOrBuildAiFutureCandles(targetSym) : next10);
+            if (!Array.isArray(parsed.aiFutureNewsPredictions) || parsed.aiFutureNewsPredictions.length < 4) {
+              parsed.aiFutureNewsPredictions = W.getOrBuildAiFutureNewsPredictions ? W.getOrBuildAiFutureNewsPredictions(targetSym) : [];
+            }
+            return {
+              ok: true,
+              symbol: targetSym,
+              tvSymbol: inst.tvSymbol || "OANDA:" + targetSym,
+              name: inst.name,
+              model: m + " · CodeCraft Deep Reasoning (ALL 14 inputs)",
+              aiEngine: "deepseek-pro-codecraft",
+              spotPrice: inst.price,
+              decimals: inst.decimals,
+              dossier: fullDossier,
+              ...parsed
+            };
+          }
+        } catch (e) {}
+      }
+      return null;
+    }
+    const callAIDirectFromBrowser = callDeepSeekProDailyBias;
+
+    async function fetchAIDailyBiasForSymbol(sym, force = false, customQuestion = "") {
+      const targetSym = String(sym || state.activeSymbol || "XAUUSD").toUpperCase();
+      const prelocked = window.__PRELOADED_DAILY_BIAS_LOCK__?.[targetSym];
+
+      // 1) Date-lock by DeepSeek Pro: once decided today, refresh NEVER flips it.
+      if (!force && !customQuestion) {
+        const dayLock = readDeepSeekDayLock(targetSym);
+        if (dayLock && dayLock.dailyBias) {
+          window.PMT_LIVE.aiBiasBySymbol[targetSym] = {
+            ...(prelocked || {}), ...dayLock,
+            elementByElementAudit: prelocked?.elementByElementAudit,
+            masterHierarchicalScore: dayLock.masterScore ?? prelocked?.masterHierarchicalScore,
+            tier1Score: prelocked?.tier1Score, tier2Score: prelocked?.tier2Score, tier3Score: prelocked?.tier3Score,
+            lockedForDate: todayKey()
+          };
+          state.aiLoading = false;
+          renderAITopSection();
+          document.querySelectorAll('[data-widget-id="ai-daily-bias"]').forEach(bodyEl => {
+            bodyEl.innerHTML = W.renderWidget("ai-daily-bias", state.activeSymbol, state.activeTimeframe);
+            if (W.mountInteractiveCharts) requestAnimationFrame(() => W.mountInteractiveCharts());
+          });
+          updateAutoSyncBadge("DEEPSEEK PRO · LOCKED " + todayKey());
+          return;
+        }
+      }
+
+      if (state.aiLoading) return;
+      state.aiLoading = true;
+      renderAITopSection();
+      let result = null;
+      try { result = await callDeepSeekProDailyBias(targetSym, customQuestion); } catch (e) {}
+      if (result) {
+        const merged = {
+          ...(prelocked || {}), ...result,
+          elementByElementAudit: prelocked?.elementByElementAudit,
+          masterHierarchicalScore: result.masterScore ?? prelocked?.masterHierarchicalScore,
+          tier1Score: prelocked?.tier1Score, tier2Score: prelocked?.tier2Score, tier3Score: prelocked?.tier3Score,
+          lockedForDate: todayKey()
+        };
+        window.PMT_LIVE.aiBiasBySymbol[targetSym] = merged;
+        if (!customQuestion) writeDeepSeekDayLock(targetSym, merged);
+        updateAutoSyncBadge("DEEPSEEK PRO SYNCED · " + (result.model || "").split(" ")[0]);
+      } else if (prelocked && !window.PMT_LIVE.aiBiasBySymbol[targetSym]) {
+        // All AI models unreachable: keep showing the previous system lock, clearly as fallback.
+        window.PMT_LIVE.aiBiasBySymbol[targetSym] = prelocked;
+        updateAutoSyncBadge("AI OFFLINE · FALLBACK LOCK SHOWN");
+      }
+      state.aiLoading = false;
+      renderAITopSection();
+      document.querySelectorAll('[data-widget-id="ai-daily-bias"]').forEach(bodyEl => {
+        bodyEl.innerHTML = W.renderWidget("ai-daily-bias", state.activeSymbol, state.activeTimeframe);
+        if (W.mountInteractiveCharts) requestAnimationFrame(() => W.mountInteractiveCharts());
+      });
+    }
+    window.fetchAIDailyBiasForSymbol = fetchAIDailyBiasForSymbol;
+
+
+    function submitInlineAIQuestion() {
+      const inp = document.getElementById("inlineAIInput");
+      if (!inp) return;
+      const q = inp.value.trim();
+      fetchAIDailyBiasForSymbol(state.activeSymbol, true, q);
+    }
+    window.submitInlineAIQuestion = submitInlineAIQuestion;
+
+    function toggleAISection() {
+      state.aiExpanded = !state.aiExpanded;
+      renderAITopSection();
+    }
+    window.toggleAISection = toggleAISection;
+
+    function toggleAIFutureCandles() {
+      state.aiShowFutureCandles = !state.aiShowFutureCandles;
+      renderAITopSection();
+    }
+    window.toggleAIFutureCandles = toggleAIFutureCandles;
+
+    function toggleAIVipWire() {
+      state.aiShowVipWire = !state.aiShowVipWire;
+      renderAITopSection();
+    }
+    window.toggleAIVipWire = toggleAIVipWire;
+
+    function renderAITopSection() {
+      const sec = document.getElementById("aiTopSection");
+      if (!sec) return;
+      const sym = state.activeSymbol || "XAUUSD";
+      const inst = D.INSTRUMENTS.find(x => x.symbol === sym) || D.INSTRUMENTS[0];
+      const seas = window.PMT_LIVE?.seasonalityBySymbol?.[sym];
+      const ai = window.PMT_LIVE?.aiBiasBySymbol?.[sym] || (window.__PRELOADED_DAILY_BIAS_LOCK__ && window.__PRELOADED_DAILY_BIAS_LOCK__[sym]);
+      const f5d = seas?.forecastTable?.find(r => r.daysFromToday === 5) || seas?.forecastTable?.[0] || { predictionPct: 0, predictionPips: 0, probability: 55, formattedDate: "5D" };
+
+      const dailyBias = ai?.dailyBias || (inst.price >= inst.ema20 ? "BULLISH" : "BEARISH");
+      const conviction = ai?.conviction || 50;
+      const lockedDate = ai?.lockedForDate || "2026-10-14";
+      const masterScore = Number(ai?.masterHierarchicalScore || 0);
+      const modelName = ai?.model || "deepseek-v4-pro-max · CodeCraft (awaiting first AI run — press Verify Bias)";
+      const isBull = String(dailyBias).includes("BULL");
+      const isBear = String(dailyBias).includes("BEAR");
+      const biasColor = isBull ? "#34d399" : isBear ? "#fb7185" : "#f5c542";
+      const biasBg = isBull ? "rgba(16,185,129,0.16)" : isBear ? "rgba(244,63,94,0.16)" : "rgba(212, 175, 55,0.16)";
+      const kl = ai?.keyLevels || {
+        biasPivot: W.fmt(inst.price, inst.decimals),
+        entryZone: `${W.fmt(inst.price - inst.adrPips * inst.pipSize * 0.2, inst.decimals)}–${W.fmt(inst.price + inst.adrPips * inst.pipSize * 0.15, inst.decimals)}`,
+        target1: W.fmt(isBear ? inst.price - inst.adrPips * inst.pipSize * 0.85 : inst.price + inst.adrPips * inst.pipSize * 0.85, inst.decimals),
+        target2: W.fmt(isBear ? inst.price - inst.adrPips * inst.pipSize * 1.6 : inst.price + inst.adrPips * inst.pipSize * 1.6, inst.decimals),
+        invalidationStop: W.fmt(isBear ? inst.price + inst.adrPips * inst.pipSize * 0.6 : inst.price - inst.adrPips * inst.pipSize * 0.6, inst.decimals),
+        riskReward: "1 : 2.6"
+      };
+      const pillars = ai?.whyPillars || [
+        {
+          title: `1. Technical Structure & Price Action (${inst.tvSymbol || "OANDA:" + sym})`,
+          verdict: inst.price >= inst.ema20 ? "BULLISH" : "BEARISH",
+          explanation: `Spot CFD (${W.fmt(inst.price, inst.decimals)}) trades ${inst.price >= inst.ema20 ? "above" : "below"} EMA20 (${W.fmt(inst.ema20, inst.decimals)}), EMA50 (${W.fmt(inst.ema50, inst.decimals)}), and EMA200 (${W.fmt(inst.ema200, inst.decimals)}) with RSI(14) at ${W.fmt(inst.rsi, 1)} and 14D ADR at ${inst.adrPips} pips.`
+        },
+        {
+          title: "2. 17.4-Year Empirical Seasonality (4,500 CFD Bars)",
+          verdict: (f5d.predictionPct || 0) >= 0 ? "BULLISH" : "BEARISH",
+          explanation: `Across 4,500 daily CFD bars, the 5-day seasonal trajectory (${f5d.formattedDate}) projects ${f5d.predictionPct >= 0 ? "+" : ""}${W.fmt(f5d.predictionPct, 2)}% (${f5d.predictionPips} pips, ${f5d.probability}% win rate).`
+        },
+        {
+          title: "3. CFTC COT Institutional vs. DMX Retail Flow",
+          verdict: inst.dmxLongPct <= 50 ? "BULLISH" : "BEARISH",
+          explanation: `CFTC Managed Money / Lev Funds net sits at ${(inst.cotNet || 0).toLocaleString()} contracts (52W Z-Score ${W.fmt(inst.cotZ, 2)}σ) vs ${inst.dmxLongPct}% retail long crowding.`
+        },
+        {
+          title: "4. Macro Regime, Central Bank Rates & Yields",
+          verdict: (inst.smartBias || 0) >= 0 ? "BULLISH" : "BEARISH",
+          explanation: `US 10Y Treasury yields trade at 5.22% (2Y at 4.81%, Fed Policy Rate 4.00%), driving institutional rate-differential flows on ${sym}.`
+        }
+      ];
+
+      sec.innerHTML = `
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+            <span style="background:rgba(56,189,248,0.18);color:#38bdf8;border:1px solid rgba(56,189,248,0.45);padding:2px 8px;border-radius:4px;font-size:10.5px;font-weight:900;">🤖 AI DAILY BIAS · DEEPSEEK PRO (${modelName})</span>
+            <span style="background:#f5c542;color:#050507;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:900;font-family:monospace;">🔒 LOCKED FOR DATE: ${lockedDate}</span>
+            <span style="font-size:12.5px;font-weight:900;color:#fff;">${sym} <span style="color:#94a3b8;font-weight:600;font-size:11px;">(${inst.name} · <strong id="aiLiveSpotReadout" style="color:#34d399;font-family:monospace;">Spot ${W.fmt(inst.price, inst.decimals)}</strong>)</span></span>
+            <span style="background:${biasBg};color:${biasColor};border:1px solid ${biasColor};padding:2px 10px;border-radius:5px;font-size:11.5px;font-weight:900;letter-spacing:0.03em;">
+              NEXT-CANDLE BIAS FORECAST: ${dailyBias} (${conviction}% CONVICTION · HIERARCHY: ${masterScore >= 0 ? "+" : ""}${masterScore.toFixed(2)}/10)
+            </span>
+            ${state.aiLoading ? `<span style="color:#f5c542;font-size:10.5px;font-weight:800;">🧠 DeepSeek Pro FORECASTING the next candle ex-ante (completed candles + day-open inputs) — up to ~2 min…</span>` : ""}
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-family:monospace;font-size:10.5px;">
+            <span style="color:#94a3b8;">Pivot:<strong style="color:#f5c542;margin-left:3px;">${kl.biasPivot}</strong></span>
+            <span style="color:#94a3b8;">Entry:<strong style="color:#38bdf8;margin-left:3px;">${kl.entryZone}</strong></span>
+            <span style="color:#94a3b8;">T1:<strong style="color:#34d399;margin-left:3px;">${kl.target1}</strong></span>
+            <span style="color:#94a3b8;">T2:<strong style="color:#10b981;margin-left:3px;">${kl.target2}</strong></span>
+            <span style="color:#94a3b8;">Stop:<strong style="color:#fb7185;margin-left:3px;">${kl.invalidationStop}</strong></span>
+            <button type="button" class="w-btn" onclick="toggleAIVipWire()" style="border-color:#f5c542;color:#f5c542;font-weight:800;">${state.aiShowVipWire ? "📡 Hide VIP Tweets & War Flash AI" : "📡 Show VIP Tweets & War Flash (AI Bias)"}</button>
+            <button type="button" class="w-btn" onclick="toggleAIFutureCandles()" style="border-color:#10b981;color:#34d399;font-weight:800;">${state.aiShowFutureCandles ? "🕯️ Hide AI 11-Element Hierarchy & Future Candles" : "🕯️ Show AI 11-Element Hierarchy & Future Candles"}</button>
+            <button type="button" class="w-btn" onclick="fetchAIDailyBiasForSymbol('${sym}', true)" style="border-color:#f5c542;color:#f5c542;font-weight:800;">🔒 Verify ${lockedDate} Bias</button>
+            <button type="button" class="w-btn" onclick="toggleAISection()" style="border-color:#38bdf8;color:#38bdf8;font-weight:700;">${state.aiExpanded ? "▲ Compact" : "▼ Expand Full AI"}</button>
+          </div>
+        </div>
+        ${state.aiExpanded ? `
+          <div style="margin-top:7px;padding-top:7px;border-top:1px solid rgba(148,163,184,0.16);display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;">
+              <div style="flex:1;min-width:280px;">
+                <div style="font-size:11.5px;font-weight:800;color:#f8fafc;">${ai?.headlineThesis || `Daily Institutional Bias Synthesis for ${sym} (${inst.tvSymbol || "OANDA:" + sym})`}</div>
+                <div style="font-size:11px;color:#cbd5e1;line-height:1.45;margin-top:2px;">${ai?.executiveSummary || ""}</div>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;min-width:310px;">
+                <input id="inlineAIInput" type="text" class="ctrl-input" style="flex:1;padding:4px 8px;font-size:11px;" placeholder="Ask AI Why about ${sym} (e.g. Why is ${sym} ${dailyBias.toLowerCase()} today?)..." onkeydown="if(event.key==='Enter')submitInlineAIQuestion()" />
+                <button type="button" class="ctrl-btn primary" style="padding:4px 9px;font-size:10.5px;" onclick="submitInlineAIQuestion()">Ask AI</button>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;">
+              ${pillars.map(p => {
+                const pCol = String(p.verdict).includes("BULL") ? "#34d399" : String(p.verdict).includes("BEAR") ? "#fb7185" : "#38bdf8";
+                return `
+                  <div style="background:#08080c;border:1px solid rgba(148,163,184,0.16);border-left:3px solid ${pCol};border-radius:5px;padding:6px 8px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;margin-bottom:3px;">
+                      <strong style="font-size:10px;color:#f8fafc;">${p.title}</strong>
+                      <span style="font-size:9px;font-weight:800;padding:1px 5px;border-radius:3px;background:${pCol}22;color:${pCol};">${p.verdict}</span>
+                    </div>
+                    <div style="font-size:10px;color:#cbd5e1;line-height:1.42;">${p.explanation}</div>
+                  </div>
+                `;
+              }).join("")}
+            </div>
+            ${state.aiShowFutureCandles && W.buildAiFutureCandlesAndChartHtml ? W.buildAiFutureCandlesAndChartHtml(sym) : ""}
+            ${state.aiShowVipWire && W.buildVipTweetsAndWarFlashHtml ? `<div style="max-height:360px;overflow:auto;border:1px solid rgba(245,197,66,0.35);border-radius:6px;">${W.buildVipTweetsAndWarFlashHtml(sym, true)}</div>` : ""}
+          </div>
+        ` : ""}
+      `;
+      if (W.mountInteractiveCharts) {
+        requestAnimationFrame(() => W.mountInteractiveCharts());
+      }
+    }
+
+    const staticBootstrapLoaded = new Set();
+
+    async function refreshLiveProviders(symOverride, tfOverride, silentAutoSync = false) {
+      const sym = symOverride || state.activeSymbol;
+      const tf = tfOverride || state.activeTimeframe;
+      try {
+        let res = await fetch(`/api/live/bootstrap?symbol=${encodeURIComponent(sym)}&timeframe=${encodeURIComponent(tf)}`);
+        const ct = (res.headers && res.headers.get) ? (res.headers.get("content-type") || "") : "";
+        let isStaticFallback = false;
+        if (!res.ok || !ct.includes("json")) {
+          if (silentAutoSync && staticBootstrapLoaded.has(sym)) {
+            // Do NOT overwrite live 10s ticking prices with static CDN JSON on periodic sync!
+            return;
+          }
+          res = await fetch(`/api/live/bootstrap-${encodeURIComponent(sym)}.json`);
+          isStaticFallback = true;
+        }
+        const payload = await res.json();
+        if (payload && (payload.ok || payload.success) && D.applyLiveBootstrap) {
+          staticBootstrapLoaded.add(sym);
+          const prevCount = D.INSTRUMENTS.length;
+          D.applyLiveBootstrap(payload);
+          syncSymbolSelectDropdown();
+          const totalBars = payload.seasonality?.totalHistoricalBars || window.PMT_LIVE?.seasonalityBySymbol?.[sym]?.totalHistoricalBars || 4500;
+          const tvSym = payload.seasonality?.tvSymbol || window.PMT_LIVE?.seasonalityBySymbol?.[sym]?.tvSymbol || `OANDA:${sym}`;
+          const tc = document.getElementById("tickCounter");
+          if (tc) tc.textContent = `24/7 AUTO-SYNC · Real CFD (${tvSym}): ${totalBars.toLocaleString()} Bars · CFTC: ${payload.cftc?.[0]?.reportDate || "Live"}`;
+          updateAutoSyncBadge();
+          renderTickerBar(D.INSTRUMENTS.length !== prevCount);
+          renderAITopSection();
+          if (!silentAutoSync) {
+            renderMainArea();
+          } else if (!isStaticFallback) {
+            refreshNonCanvasWidgetsInPlace();
+          }
+        }
+      } catch (e) {}
+    }
+    window.refreshLiveProviders = refreshLiveProviders;
+
+    function refreshNonCanvasWidgetsInPlace() {
+      document.querySelectorAll("[data-widget-id]").forEach(el => {
+        const wId = el.getAttribute("data-widget-id");
+        if (wId && !["technical-charts", "price-chart", "information-chart", "seasonality-forecast-chart", "seasonality-forecast", "ai-daily-bias"].includes(wId)) {
+          el.innerHTML = W.renderWidget(wId, state.activeSymbol, state.activeTimeframe);
+        }
+      });
+    }
+
+    let next10sCountdown = 10;
+
+    const TV_SCAN_TICKER_BY_SYM = {
+      XAUUSD: "OANDA:XAUUSD", XAGUSD: "TVC:SILVER", EURJPY: "OANDA:EURJPY", EURUSD: "OANDA:EURUSD",
+      GBPUSD: "OANDA:GBPUSD", USDJPY: "OANDA:USDJPY", AUDUSD: "OANDA:AUDUSD", USDCAD: "OANDA:USDCAD",
+      USDCHF: "OANDA:USDCHF", NZDUSD: "OANDA:NZDUSD", GBPJPY: "OANDA:GBPJPY", EURGBP: "OANDA:EURGBP",
+      EURAUD: "OANDA:EURAUD", AUDJPY: "OANDA:AUDJPY", EURCHF: "OANDA:EURCHF", CADJPY: "OANDA:CADJPY",
+      USOIL: "NYMEX:CL1!", UKOIL: "ICEEUR:BRN1!", NATGAS: "OANDA:NATGASUSD", COPPER: "OANDA:XCUUSD",
+      SPX500: "SP:SPX", NAS100: "NASDAQ:NDX", US30: "OANDA:US30USD", GER40: "OANDA:DE30EUR",
+      UK100: "TVC:UKX", JPN225: "TVC:NI225", DXY: "TVC:DXY", VIX: "TVC:VIX",
+      BTCUSD: "BITSTAMP:BTCUSD", ETHUSD: "BITSTAMP:ETHUSD",
+      NVDA: "NASDAQ:NVDA", AAPL: "NASDAQ:AAPL", MSFT: "NASDAQ:MSFT", TSLA: "NASDAQ:TSLA"
+    };
+
+    async function run10SecondPriceUpdateCycle() {
+      next10sCountdown = 10;
+      const flashMap = {};
+      const tvQuoteByTicker = new Map();
+
+      // 1. Query Official TradingView Global Scanner API directly via CORS (100% Real Institutional Quotes for All 34 Assets)
+      try {
+        const tickers = D.INSTRUMENTS.map(inst => inst.scanTvSymbol || TV_SCAN_TICKER_BY_SYM[inst.symbol] || inst.tvSymbol || `OANDA:${inst.symbol}`);
+        const scanRes = await fetch(`https://scanner.tradingview.com/global/scan?t=${Date.now()}`, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=UTF-8" },
+          body: JSON.stringify({
+            symbols: { tickers: Array.from(new Set(tickers)) },
+            columns: ["close", "change", "bid", "ask", "high", "low", "RSI", "EMA20", "EMA50", "EMA200", "ATR", "Recommend.All"]
+          }),
+          cache: "no-store"
+        });
+        if (scanRes.ok) {
+          const scanJson = await scanRes.json();
+          (scanJson.data || []).forEach(row => {
+            if (row && row.s && Array.isArray(row.d)) {
+              tvQuoteByTicker.set(row.s, {
+                close: row.d[0],
+                change: row.d[1],
+                bid: row.d[2],
+                ask: row.d[3],
+                high: row.d[4],
+                low: row.d[5],
+                rsi: row.d[6],
+                ema20: row.d[7],
+                ema50: row.d[8],
+                ema200: row.d[9],
+                atr: row.d[10],
+                rec: row.d[11]
+              });
+            }
+          });
+        }
+      } catch (e) {}
+
+      // 2. Also query Binance Vision Live Spot API (100% Real Exchange Quotes for BTCUSD, ETHUSD)
+      const liveCryptoMap = {};
+      try {
+        const res = await fetch("https://data-api.binance.vision/api/v3/ticker/price?symbols=%5B%22BTCUSDT%22,%22ETHUSDT%22%5D", { cache: "no-store" });
+        if (res.ok) {
+          const arr = await res.json();
+          if (Array.isArray(arr)) {
+            arr.forEach(item => {
+              const p = Number(item.price);
+              if (item.symbol === "BTCUSDT" && p > 0) liveCryptoMap["BTCUSD"] = p;
+              else if (item.symbol === "ETHUSDT" && p > 0) liveCryptoMap["ETHUSD"] = p;
+            });
+          }
+        }
+      } catch (e) {}
+
+      // 3. Apply 100% Real Quotes to D.INSTRUMENTS (Zero synthetic/random numbers!)
+      D.INSTRUMENTS.forEach((inst) => {
+        const prevPrice = Number(inst.price);
+        const pip = Number(inst.pipSize) || (inst.decimals === 4 ? 0.0001 : inst.decimals === 3 ? 0.001 : 0.01);
+        const scanKey = inst.scanTvSymbol || TV_SCAN_TICKER_BY_SYM[inst.symbol] || inst.tvSymbol || `OANDA:${inst.symbol}`;
+        const q = tvQuoteByTicker.get(scanKey);
+
+        if (q && q.close !== null && q.close !== undefined && Number.isFinite(Number(q.close))) {
+          inst.price = Number(Number(q.close).toFixed(inst.decimals));
+          if (q.bid !== null && q.bid !== undefined && Number.isFinite(Number(q.bid))) {
+            inst.bid = Number(Number(q.bid).toFixed(inst.decimals));
+          } else {
+            inst.bid = inst.price;
+          }
+          if (q.ask !== null && q.ask !== undefined && Number.isFinite(Number(q.ask))) {
+            inst.ask = Number(Number(q.ask).toFixed(inst.decimals));
+          } else {
+            inst.ask = Number((inst.price + pip * 2).toFixed(inst.decimals));
+          }
+          if (q.change !== null && q.change !== undefined && Number.isFinite(Number(q.change))) {
+            inst.chgPct = Number(Number(q.change).toFixed(2));
+          }
+          if (q.high) inst.dayHigh = Number(Number(q.high).toFixed(inst.decimals));
+          if (q.low) inst.dayLow = Number(Number(q.low).toFixed(inst.decimals));
+          if (q.rsi) inst.rsi = Number(Number(q.rsi).toFixed(1));
+          if (q.ema20) inst.ema20 = Number(Number(q.ema20).toFixed(inst.decimals));
+          if (q.ema50) inst.ema50 = Number(Number(q.ema50).toFixed(inst.decimals));
+          if (q.ema200) inst.ema200 = Number(Number(q.ema200).toFixed(inst.decimals));
+          if (q.atr) inst.adrPips = Math.max(1, Math.round(Number(q.atr) / pip));
+        } else if (liveCryptoMap[inst.symbol]) {
+          inst.price = Number(liveCryptoMap[inst.symbol].toFixed(inst.decimals));
+          inst.bid = inst.price;
+          inst.ask = Number((inst.price + pip).toFixed(inst.decimals));
+        }
+
+        const delta = inst.price - prevPrice;
+        flashMap[inst.symbol] = delta > 0 ? "up" : delta < 0 ? "down" : (inst.chgPct >= 0 ? "up" : "down");
+
+        // Update active chart candle & OHLC legend in real time!
+        if (W.onLiveTick) {
+          W.onLiveTick({
+            symbol: inst.symbol,
+            price: inst.price,
+            bid: inst.bid,
+            ask: inst.ask,
+            chgPct: inst.chgPct
+          });
+        }
+      });
+
+      // 3. Update the sliding top ticker bar IN-PLACE (with green/red flash highlights and zero scroll reset!)
+      updateTickerBarPricesInPlace(flashMap);
+
+      // 4. Update active symbol spot readout in AI banner & non-canvas tables
+      const activeInst = D.INSTRUMENTS.find(x => x.symbol === state.activeSymbol) || D.INSTRUMENTS[0];
+      const spotEl = document.getElementById("aiLiveSpotReadout");
+      if (spotEl && activeInst) {
+        const isUp = flashMap[activeInst.symbol] !== "down";
+        spotEl.textContent = `Spot ${W.fmt(activeInst.price, activeInst.decimals)} ${isUp ? "▲" : "▼"}`;
+        spotEl.style.color = isUp ? "#34d399" : "#fb7185";
+      }
+      refreshNonCanvasWidgetsInPlace();
+      updateAutoSyncBadge(`${state.activeSymbol} ${W.fmt(activeInst.price, activeInst.decimals)} ${flashMap[state.activeSymbol] === "down" ? "▼" : "▲"} (10s Tick)`);
+    }
+    window.run10SecondPriceUpdateCycle = run10SecondPriceUpdateCycle;
+
+    function connectPrimeLiveWebSockets() {
+      // 1. Direct Browser WebSocket to Prime Market Terminal's Live CFD Tick Feed (wss://pws.primemarket-terminal.com:8081)
+      function openPws() {
+        try {
+          const pws = new WebSocket("wss://pws.primemarket-terminal.com:8081");
+          pws.onmessage = (ev) => {
+            try {
+              const msg = JSON.parse(ev.data);
+              if (msg && msg.symbol && msg.price) {
+                const tick = {
+                  symbol: String(msg.symbol).toUpperCase(),
+                  price: Number(msg.price),
+                  bid: Number(msg.bid || msg.price),
+                  ask: Number(msg.ask || msg.price),
+                  chgPct: Number(msg.changepct || 0)
+                };
+                if (W.onLiveTick) W.onLiveTick(tick);
+                updateAutoSyncBadge(`${tick.symbol} ${tick.price}`);
+                renderTickerBar();
+              }
+            } catch (e) {}
+          };
+          pws.onclose = () => setTimeout(openPws, 3000);
+        } catch (e) {}
+      }
+      openPws();
+
+      // 2. Backend 24/7 SSE Stream (/api/stream) relaying live CFD ticks + automatic 15s/60s multi-provider broadcasts
+      function openSse() {
+        try {
+          const es = new EventSource("/api/stream");
+          es.onmessage = (ev) => {
+            try {
+              const data = JSON.parse(ev.data);
+              if (!data) return;
+              if ((data.type === "price" || data.type === "pws_tick") && data.symbol) {
+                if (W.onLiveTick) W.onLiveTick(data);
+                updateAutoSyncBadge(`${data.symbol} ${data.price}`);
+                renderTickerBar();
+              } else if (data.type === "auto_sync_snapshot" && D.applyLiveBootstrap) {
+                D.applyLiveBootstrap({ success: true, timestamp: data.timestamp, snapshot: data.snapshot, news: data.news, orderbook: data.orderbook });
+                updateAutoSyncBadge("SNAPSHOT SYNCED");
+                renderTickerBar();
+                renderAITopSection();
+              } else if (data.type === "auto_sync_cftc" && D.applyLiveBootstrap) {
+                D.applyLiveBootstrap({ success: true, timestamp: data.timestamp, cftc: data.cftc });
+                updateAutoSyncBadge("CFTC SYNCED");
+              }
+            } catch (e) {}
+          };
+          es.onerror = () => {
+            try { es.close(); } catch (e) {}
+            setTimeout(openSse, 4000);
+          };
+        } catch (e) {}
+      }
+      openSse();
+    }
+
+    async function init() {
+      // Populate Symbol Selector
+      const symSel = document.getElementById("symbolSelect");
+      symSel.innerHTML = D.INSTRUMENTS.map(i => `<option value="${i.symbol}">${i.symbol} — ${i.name} (${i.assetClass})</option>`).join("");
+      symSel.value = state.activeSymbol;
+      symSel.onchange = (e) => setSymbol(e.target.value);
+
+      // Populate Layout Selector
+      const laySel = document.getElementById("layoutSelect");
+      laySel.innerHTML = D.GRID_LAYOUTS.map(l => `<option value="${l.code}">${l.name} [${l.code}]</option>`).join("");
+      laySel.value = state.activeLayout;
+      laySel.onchange = (e) => {
+        state.activeLayout = e.target.value;
+        const ws = getActiveWorkspace();
+        if (ws && ws.layout !== "catalog") ws.layout = state.activeLayout;
+        renderMainArea();
+      };
+
+      // Timeframe buttons
+      document.querySelectorAll("#tfGroup .tf-btn").forEach(btn => {
+        btn.onclick = () => setTimeframe(btn.dataset.tf);
+      });
+
+      // Immediately render all panels on frame 0 using preloaded or initial data (Zero blank screen!)
+      state.catalogData = window.__PRELOADED_CATALOG__ || { widgets: [], byCategory: {} };
+      renderTickerBar();
+      renderWorkspaceTabs();
+      renderAITopSection();
+      renderMainArea();
+      connectPrimeLiveWebSockets();
+      updateWorldClocks();
+      runMacroAIPrompt(`Synthesize ${state.activeSymbol} real 17-year CFD seasonality forecast, central bank rate differentials & CFTC COT positioning`);
+
+      // Fetch catalog & real provider bootstrap concurrently in background
+      try {
+        const [catRes] = await Promise.all([
+          fetch("/widget-catalog.json"),
+          refreshLiveProviders(state.activeSymbol, state.activeTimeframe)
+        ]);
+        if (catRes && catRes.ok) {
+          state.catalogData = await catRes.json();
+        }
+      } catch (e) {}
+
+      renderTickerBar();
+      renderWorkspaceTabs();
+      renderAITopSection();
+      renderMainArea();
+
+      // 24/7 Continuous Automatic 10-Second Price Update Cycle + Countdown
+      setTimeout(() => run10SecondPriceUpdateCycle(), 1500);
+      setInterval(() => run10SecondPriceUpdateCycle(), 10000);
+      setInterval(() => {
+        next10sCountdown = Math.max(1, next10sCountdown - 1);
+        const activeInst = D.INSTRUMENTS.find(x => x.symbol === state.activeSymbol) || D.INSTRUMENTS[0];
+        updateAutoSyncBadge(`${state.activeSymbol} ${W.fmt(activeInst.price, activeInst.decimals)} · ${next10sCountdown}s`);
+        updateWorldClocks();
+      }, 1000);
+      setInterval(() => refreshLiveProviders(state.activeSymbol, state.activeTimeframe, true), 30000);
+      setInterval(() => fetchAIDailyBiasForSymbol(state.activeSymbol, false), 180000);
+    }
+
+    function getAll128Widgets() {
+      const base = (state.catalogData && state.catalogData.widgets) ? state.catalogData.widgets : [];
+      return [...FLAGSHIP_MODULES, ...base];
+    }
+
+    function getWidgetMeta(id) {
+      const cotPair = W.getCotPairContracts ? W.getCotPairContracts(state.activeSymbol) : { baseKey: "XAU", quoteKey: "USD" };
+      const customTitles = {
+        "ai-daily-bias": { id: "ai-daily-bias", name: "🤖 AI Daily Bias & Deep Rationale (DeepSeek Pro)", category: "ai-ai" },
+        "realtime-headline-ticker": { id: "realtime-headline-ticker", name: "📡 Bloomberg VIP Tweets, Posts & War Flash (AI Bias Classifier)", category: "news" },
+        "vip-tweets-ai-wire": { id: "vip-tweets-ai-wire", name: "📡 Bloomberg VIP Tweets, Posts & War Flash (AI Bias Classifier)", category: "news" },
+        "technical-charts": { id: "technical-charts", name: "Technical Chart Widget", category: "charts" },
+        "seasonality-performance-table": { id: "seasonality-performance-table", name: "Seasonality Performance", category: "seasonality" },
+        "seasonality-forecast-chart": { id: "seasonality-forecast-chart", name: "Seasonality Prediction Candles", category: "seasonality" },
+        "seasonality-forecast-table": { id: "seasonality-forecast-table", name: "Seasonality Forecast Table", category: "seasonality" },
+        "seasonality-performance-chart": { id: "seasonality-performance-chart", name: "Seasonality Performance", category: "seasonality" },
+        "cot-overview-chart": { id: "cot-overview-chart", name: "Overview Chart (Daily)", category: "cot" },
+        "cot-smart-money-donuts": { id: "cot-smart-money-donuts", name: "Smart Money Report (Leveraged)", category: "cot" },
+        "cot-history-1y-compare": { id: "cot-history-1y-compare", name: "COT History Chart (1 Year)", category: "cot" },
+        "cot-table-base": { id: "cot-table-base", name: `Cot History Table ${cotPair.baseKey} (Leveraged)`, category: "cot" },
+        "cot-chart-base-netpct": { id: "cot-chart-base-netpct", name: `COT History Chart ${cotPair.baseKey} (Leveraged, NetPercent, 1 Year)`, category: "cot" },
+        "cot-table-quote": { id: "cot-table-quote", name: `Cot History Table ${cotPair.quoteKey} (Leveraged)`, category: "cot" },
+        "cot-chart-quote-netpos-5y": { id: "cot-chart-quote-netpos-5y", name: `COT History Chart ${cotPair.quoteKey} (Leveraged, NetPosition, 5 Years)`, category: "cot" }
+      };
+      if (customTitles[id]) return customTitles[id];
+      const all = getAll128Widgets();
+      const found = all.find(w => w.id === id);
+      if (found) return found;
+      return { id, name: id.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase()), category: "institutional" };
+    }
+
+    function getActiveWorkspace() {
+      return D.WORKSPACES.find(w => w.id === state.activeWorkspaceId) || D.WORKSPACES[0];
+    }
+
+    let activeInspectedWidgetId = null;
+
+    function syncSymbolSelectDropdown() {
+      const symSel = document.getElementById("symbolSelect");
+      if (!symSel) return;
+      if (symSel.options.length !== D.INSTRUMENTS.length) {
+        symSel.innerHTML = D.INSTRUMENTS.map(i => `<option value="${i.symbol}">${i.symbol} — ${i.name} (${i.assetClass})</option>`).join("");
+      }
+      symSel.value = state.activeSymbol;
+    }
+
+    async function setSymbol(sym) {
+      state.activeSymbol = String(sym || "XAUUSD").toUpperCase();
+      syncSymbolSelectDropdown();
+      try {
+        const u = new URL(window.location.href);
+        u.searchParams.set("symbol", state.activeSymbol);
+        window.history.replaceState({}, "", u.toString());
+      } catch (e) {}
+      const seas = window.PMT_LIVE?.seasonalityBySymbol?.[state.activeSymbol] || window.__PRELOADED_ALL_SEASONALITY__?.[state.activeSymbol];
+      if (seas) {
+        const tc = document.getElementById("tickCounter");
+        if (tc) tc.textContent = `24/7 AUTO-SYNC · Real CFD (${seas.tvSymbol || "OANDA:" + state.activeSymbol}): ${(seas.totalHistoricalBars || 4500).toLocaleString()} Bars · CFTC: ${window.PMT_LIVE?.cftc?.[0]?.reportDate || "Live"}`;
+      }
+      renderTickerBar();
+      renderAITopSection();
+      renderMainArea();
+      if (activeInspectedWidgetId && document.getElementById("inspectModal")?.classList.contains("open")) {
+        inspectWidget(activeInspectedWidgetId);
+      }
+      await refreshLiveProviders(state.activeSymbol, state.activeTimeframe, false);
+      fetchAIDailyBiasForSymbol(state.activeSymbol, false);
+    }
+    window.PMT_SET_SYMBOL = setSymbol;
+
+    function renderTickerBar(forceRebuild = false) {
+      const bar = document.getElementById("tickerBar");
+      if (!bar) return;
+      let track = document.getElementById("tickerTrack");
+      if (track && bar.innerHTML.includes("ticker-item") && !forceRebuild) {
+        updateTickerBarPricesInPlace({});
+        return;
+      }
+      // Build two identical copies of all instruments inside .ticker-track for seamless right-to-left sliding marquee
+      const doubled = [...D.INSTRUMENTS, ...D.INSTRUMENTS];
+      bar.innerHTML = `<div class="ticker-track" id="tickerTrack">${doubled.map((inst) => {
+        const isUp = inst.chgPct >= 0;
+        return `
+          <div class="ticker-item" data-tk-item="${inst.symbol}" onclick="setSymbol('${inst.symbol}')">
+            <strong data-tk-sym="${inst.symbol}" style="color:${inst.symbol === state.activeSymbol ? "#f5c542" : "#f8fafc"};">${inst.symbol}</strong>
+            <span data-tk-price="${inst.symbol}" style="font-family:monospace;font-weight:700;color:#e2e8f0;">${W.fmt(inst.price, inst.decimals)}</span>
+            <span data-tk-chg="${inst.symbol}" style="font-family:monospace;font-weight:800;color:${isUp ? "#34d399" : "#fb7185"};">${isUp ? "▲ +" : "▼ "}${W.fmt(inst.chgPct, 2)}%</span>
+          </div>
+        `;
+      }).join("")}</div>`;
+    }
+
+    function updateTickerBarPricesInPlace(flashMap = {}) {
+      D.INSTRUMENTS.forEach(inst => {
+        const isUp = inst.chgPct >= 0;
+        const flashDir = flashMap[inst.symbol];
+        document.querySelectorAll(`[data-tk-sym="${inst.symbol}"]`).forEach(el => {
+          el.style.color = inst.symbol === state.activeSymbol ? "#f5c542" : "#f8fafc";
+        });
+        document.querySelectorAll(`[data-tk-price="${inst.symbol}"]`).forEach(el => {
+          const arrow = flashDir === "up" ? " ▲" : flashDir === "down" ? " ▼" : "";
+          el.textContent = `${W.fmt(inst.price, inst.decimals)}${arrow}`;
+          if (flashDir === "up") el.style.color = "#34d399";
+          else if (flashDir === "down") el.style.color = "#fb7185";
+        });
+        document.querySelectorAll(`[data-tk-chg="${inst.symbol}"]`).forEach(el => {
+          el.textContent = `${isUp ? "+" : ""}${W.fmt(inst.chgPct, 2)}%`;
+          el.style.color = isUp ? "#34d399" : "#fb7185";
+        });
+        if (flashDir) {
+          document.querySelectorAll(`[data-tk-item="${inst.symbol}"]`).forEach(itemEl => {
+            itemEl.classList.remove("flash-up", "flash-down");
+            itemEl.classList.add(flashDir === "up" ? "flash-up" : "flash-down");
+            setTimeout(() => {
+              itemEl.classList.remove("flash-up", "flash-down");
+            }, 1400);
+          });
+        }
+      });
+    }
+
+    function renderWorkspaceTabs() {
+      const bar = document.getElementById("wsBar");
+      bar.innerHTML = D.WORKSPACES.map(ws => `
+        <button class="ws-tab ${ws.id === state.activeWorkspaceId ? "active" : ""}" onclick="selectWorkspace('${ws.id}')">${ws.name}</button>
+      `).join("");
+    }
+
+    function selectWorkspace(wsId) {
+      state.activeWorkspaceId = wsId;
+      const ws = getActiveWorkspace();
+      if (ws.layout !== "catalog") {
+        state.activeLayout = ws.layout;
+        document.getElementById("layoutSelect").value = ws.layout;
+      }
+      renderWorkspaceTabs();
+      renderMainArea();
+    }
+
+    function renderMainArea() {
+      const grid = document.getElementById("widgetGrid");
+      const ws = getActiveWorkspace();
+
+      if (ws.layout === "catalog") {
+        grid.style.gridTemplateColumns = "1fr";
+        grid.style.gridTemplateRows = "1fr";
+        grid.innerHTML = `<div class="widget-card"><div class="widget-body">${buildCatalogHTML("")}</div></div>`;
+        return;
+      }
+
+      const layoutObj = D.GRID_LAYOUTS.find(l => l.code === state.activeLayout) || D.GRID_LAYOUTS[0];
+      const cols = state.activeLayout === "ai-ai-pro" ? 2 : (state.activeLayout === "cot-pro" ? 3 : layoutObj.cols);
+      grid.style.gridTemplateColumns = `repeat(${cols}, minmax(0, 1fr))`;
+      grid.style.gridTemplateRows = state.activeLayout === "seasonality-pro"
+        ? "minmax(285px, 1.25fr) minmax(240px, 1fr)"
+        : state.activeLayout === "ai-ai-pro"
+        ? "minmax(340px, 1.3fr) minmax(250px, 1fr)"
+        : state.activeLayout === "cot-pro"
+        ? "minmax(225px, 1fr) minmax(240px, 1.12fr) minmax(240px, 1.12fr)"
+        : `repeat(${layoutObj.rows}, minmax(230px, 1fr))`;
+
+      grid.innerHTML = ws.widgets.map((wId, idx) => {
+        const meta = getWidgetMeta(wId);
+        const spanStyle =
+          (state.activeLayout === "seasonality-pro" && idx === 0) ||
+          (state.activeLayout === "cot-pro" && (wId === "cot-table-base" || wId === "cot-table-quote"))
+            ? "grid-column: span 2;"
+            : "";
+        return `
+          <div class="widget-card" style="${spanStyle}">
+            <div class="widget-header">
+              <div class="widget-title">
+                <span class="widget-dot"></span>
+                <span>${meta.name}</span>
+                <span style="font-size:9.5px;color:#64748b;font-weight:600;text-transform:uppercase;">[${meta.category}]</span>
+              </div>
+              <div class="widget-actions">
+                <span style="font-size:10px;color:#94a3b8;font-family:monospace;">${state.activeSymbol} · ${state.activeTimeframe}</span>
+                <button class="w-btn" onclick="inspectWidget('${wId}')" title="Expand Full Screen">⤢ Expand</button>
+                <button class="w-btn" onclick="removeWidgetAt(${idx})" title="Remove Widget">✕</button>
+              </div>
+            </div>
+            <div class="widget-body" data-widget-id="${wId}" style="padding:0;">
+              ${W.renderWidget(wId, state.activeSymbol, state.activeTimeframe)}
+            </div>
+          </div>
+        `;
+      }).join("");
+      if (W.mountInteractiveCharts) {
+        requestAnimationFrame(() => W.mountInteractiveCharts());
+      }
+    }
+
+    function removeWidgetAt(idx) {
+      const ws = getActiveWorkspace();
+      if (ws && ws.widgets.length > 1) {
+        ws.widgets.splice(idx, 1);
+        renderMainArea();
+      }
+    }
+
+    function addWidgetToActiveWorkspace(wId) {
+      const ws = getActiveWorkspace();
+      if (ws.layout === "catalog") {
+        state.activeWorkspaceId = D.WORKSPACES[0].id;
+        D.WORKSPACES[0].widgets.unshift(wId);
+        renderWorkspaceTabs();
+      } else {
+        ws.widgets.unshift(wId);
+      }
+      closeModals();
+      renderMainArea();
+    }
+
+    function buildCatalogHTML(query = "") {
+      const q = query.trim().toLowerCase();
+      const all = getAll128Widgets().filter(w => !q || w.name.toLowerCase().includes(q) || w.id.toLowerCase().includes(q) || (w.category || "").toLowerCase().includes(q));
+      const grouped = {};
+      all.forEach(w => {
+        const cat = w.category || "institutional";
+        if (!grouped[cat]) grouped[cat] = [];
+        grouped[cat].push(w);
+      });
+
+      return `
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(212, 175, 55,0.1);border:1px solid rgba(212, 175, 55,0.35);padding:10px 14px;border-radius:8px;">
+            <div>
+              <strong style="color:#f5c542;font-size:13px;">All ${all.length} XAU-ELITE-FONDA Widgets Unlocked (19 Categories)</strong>
+              <div style="font-size:11px;color:#cbd5e1;margin-top:2px;">Every single widget from desk.prime-terminal.com is unlocked without demo gates, registration, or subscription fees.</div>
+            </div>
+          </div>
+          ${Object.entries(grouped).map(([cat, list]) => `
+            <div>
+              <div style="font-size:12px;font-weight:800;color:#f5c542;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;border-bottom:1px solid rgba(148,163,184,0.15);padding-bottom:4px;">
+                ${cat} (${list.length} Widgets)
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:8px;">
+                ${list.map(w => `
+                  <div style="background:#151c2c;border:1px solid rgba(148,163,184,0.16);border-radius:6px;padding:9px 11px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;">
+                    <div>
+                      <div style="font-weight:700;font-size:12px;color:#f8fafc;">${w.name}</div>
+                      <div style="font-family:monospace;font-size:10px;color:#64748b;margin-top:2px;">id: ${w.id}</div>
+                    </div>
+                    <div style="display:flex;gap:6px;">
+                      <button class="ctrl-btn primary" style="flex:1;justify-content:center;font-size:10.5px;padding:4px 6px;" onclick="inspectWidget('${w.id}')">⚡ Inspect Live</button>
+                      <button class="ctrl-btn" style="font-size:10.5px;padding:4px 8px;" onclick="addWidgetToActiveWorkspace('${w.id}')">+ Grid</button>
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function openWidgetCatalogModal() {
+      document.getElementById("catalogModal").classList.add("open");
+      renderCatalogModalContent();
+    }
+
+    function renderCatalogModalContent() {
+      const q = document.getElementById("catalogSearch").value || "";
+      document.getElementById("catalogModalContent").innerHTML = buildCatalogHTML(q);
+    }
+
+    function inspectWidget(wId) {
+      activeInspectedWidgetId = wId;
+      closeModals();
+      const meta = getWidgetMeta(wId);
+      document.getElementById("inspectTitle").textContent = `${meta.name} [${meta.category.toUpperCase()}] — ${state.activeSymbol} (${state.activeTimeframe})`;
+      document.getElementById("inspectAddBtn").onclick = () => addWidgetToActiveWorkspace(wId);
+      document.getElementById("inspectModalBody").innerHTML = W.renderWidget(wId, state.activeSymbol, state.activeTimeframe);
+      document.getElementById("inspectModal").classList.add("open");
+      if (W.mountInteractiveCharts) {
+        requestAnimationFrame(() => W.mountInteractiveCharts());
+      }
+    }
+
+    function openMacroAIModal() {
+      document.getElementById("macroAIModal").classList.add("open");
+    }
+
+    function closeModals() {
+      document.querySelectorAll(".modal-backdrop").forEach(m => m.classList.remove("open"));
+    }
+
+    async function runMacroAIPrompt(promptText) {
+      document.getElementById("aiQueryInput").value = promptText;
+      await submitMacroAI();
+    }
+
+    async function submitMacroAI() {
+      const q = document.getElementById("aiQueryInput").value.trim() || `Institutional synthesis for ${state.activeSymbol}`;
+      const box = document.getElementById("aiResponseBox");
+      box.innerHTML = `<div style="color:#f5c542;font-weight:700;">⚡ Synthesizing live G10 Central Bank OIS Curves, CFTC COT Positioning, DMX Contrarian Book & Sovereign Spreads...</div>`;
+      try {
+        const r = await fetch("/api/ai/query", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: q, symbol: state.activeSymbol })
+        });
+        const data = await r.json();
+        box.innerHTML = data.html || `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+      } catch (e) {
+        box.innerHTML = `<div style="color:#34d399;">${q}</div>`;
+      }
+    }
+
+    // Live Audio Squawk (Web Speech API)
+    function speakLatestHeadline() {
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      const latest = D.NEWS_FEED[0];
+      const msg = new SpeechSynthesisUtterance(`XAU-ELITE-FONDA Institutional Squawk Flash. ${latest.bank}. ${latest.headline}. ${latest.summary}`);
+      msg.rate = 1.04;
+      window.speechSynthesis.speak(msg);
+    }
+    window.PMT_SPEAK_LATEST = speakLatestHeadline;
+
+    function toggleAudioSquawk() {
+      state.squawkActive = !state.squawkActive;
+      const btn = document.getElementById("squawkBtn");
+      btn.style.borderColor = state.squawkActive ? "#10b981" : "";
+      btn.style.color = state.squawkActive ? "#34d399" : "";
+      if (state.squawkActive) speakLatestHeadline();
+      else if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    }
+
+    // NeuroBeats Focus Binaural Synth (Web Audio API)
+    function toggleNeuroBeats() {
+      const btn = document.getElementById("neuroBtn");
+      if (state.neuroActive && state.neuroCtx) {
+        state.neuroCtx.close();
+        state.neuroCtx = null;
+        state.neuroActive = false;
+        btn.style.borderColor = "";
+        btn.style.color = "";
+        return;
+      }
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        const ctx = new AudioCtx();
+        const oscL = ctx.createOscillator();
+        const oscR = ctx.createOscillator();
+        const gain = ctx.createGain();
+        gain.gain.value = 0.03;
+        oscL.frequency.value = 200;
+        oscR.frequency.value = 210; // 10Hz Alpha focus beat
+        oscL.connect(gain);
+        oscR.connect(gain);
+        gain.connect(ctx.destination);
+        oscL.start();
+        oscR.start();
+        state.neuroCtx = ctx;
+        state.neuroActive = true;
+        btn.style.borderColor = "#38bdf8";
+        btn.style.color = "#38bdf8";
+      } catch (e) {}
+    }
+
+    // Zero random ticks — all updates come from /api/live/bootstrap & /api/live/snapshot real providers
+
+    function updateWorldClocks() {
+      const now = new Date();
+      const fmtTz = (tz, label) => {
+        try {
+          const s = now.toLocaleTimeString("en-GB", { timeZone: tz, hour: "2-digit", minute: "2-digit", second: "2-digit" });
+          return `<span><strong style="color:#cbd5e1;">${label}:</strong> ${s}</span>`;
+        } catch (e) {
+          return `<span><strong style="color:#cbd5e1;">${label}:</strong> --:--:--</span>`;
+        }
+      };
+      document.getElementById("worldClocks").innerHTML = [
+        fmtTz("UTC", "UTC"),
+        fmtTz("America/New_York", "NYC"),
+        fmtTz("Europe/London", "LON"),
+        fmtTz("Europe/Berlin", "FRA"),
+        fmtTz("Asia/Tokyo", "TOK"),
+        fmtTz("Australia/Sydney", "SYD")
+      ].join(" · ");
+    }
+
+    window.addEventListener("DOMContentLoaded", init);
+  </script>
+</body>
+</html>

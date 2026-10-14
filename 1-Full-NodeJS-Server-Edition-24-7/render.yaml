@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: xau-elite-fonda
+    runtime: node
+    plan: free
+    buildCommand: echo "Zero external dependencies required"
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: CODECRAFT_API_KEY
+        value: cc_evD1D06LuOTmKbTDDtnJDeTL6KJyWs5aF4rGcqAMSk3DvgNR
+    # NOTE: the built-in 24/7 Daily Closure & Learning engine starts automatically with the server.
+    # For permanent candle/ledger storage use a paid instance with a persistent disk mounted at ./data,
+    # or any VPS. On free ephemeral instances the engine re-builds closed candles from real history on boot.

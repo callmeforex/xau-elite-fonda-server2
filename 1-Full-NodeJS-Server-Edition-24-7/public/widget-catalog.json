@@ -1,0 +1,1753 @@
+{
+  "total": 122,
+  "byCategory": {
+    "Others": [
+      {
+        "id": "tab-menu-widget",
+        "name": "Tab Menu Widget",
+        "description": "A container widget with tabs and a + button to add new tabs",
+        "category": "Others",
+        "isImplemented": true
+      },
+      {
+        "id": "world-clock",
+        "name": "World Clock",
+        "description": "Display multiple timezones with current time and weather",
+        "category": "Others",
+        "isImplemented": true
+      },
+      {
+        "id": "ticklist",
+        "name": "Ticklist",
+        "description": "Task management widget with checkboxes and task tracking",
+        "category": "Others",
+        "isImplemented": true
+      },
+      {
+        "id": "notes",
+        "name": "Notes",
+        "description": "Rich text notes widget with formatting toolbar",
+        "category": "Others",
+        "isImplemented": true
+      },
+      {
+        "id": "exchange-market-hours",
+        "name": "Exchange Market Hours",
+        "description": "Display global forex market hours with timeline, table, and map views",
+        "category": "Others",
+        "isImplemented": true
+      },
+      {
+        "id": "moodboard",
+        "name": "Moodboard",
+        "description": "Interactive mood board with text, images, and drawing tools",
+        "category": "Others",
+        "isImplemented": true
+      },
+      {
+        "id": "trading-journal",
+        "name": "Trading Journal",
+        "description": "Trade tracking and analysis with calendar view and statistics",
+        "category": "Others",
+        "isImplemented": true
+      },
+      {
+        "id": "scoring-table",
+        "name": "Scoring Table",
+        "description": "Currency bias scoring table with indicators and categories",
+        "category": "Others",
+        "isImplemented": true
+      },
+      {
+        "id": "watchlist",
+        "name": "Watchlist",
+        "description": "Monitor favorite assets in real-time with price tracking and order management",
+        "category": "Others",
+        "isImplemented": true
+      },
+      {
+        "id": "neurobeats-player",
+        "name": "NeuroBeats Player",
+        "description": "Binaural beat audio player with focus, deep work, creativity, and relaxation tracks for enhanced productivity",
+        "category": "Others",
+        "isImplemented": true
+      }
+    ],
+    "charts": [
+      {
+        "id": "technical-charts",
+        "name": "Technical Charts",
+        "description": "Advanced technical analysis charts with drawing tools, indicators, and multiple chart types",
+        "category": "charts",
+        "isImplemented": true
+      },
+      {
+        "id": "price-chart",
+        "name": "Price Chart",
+        "description": "Professional trading chart with advanced technical analysis, drawing tools, and 100+ indicators using TradingView Advanced Charts",
+        "category": "charts",
+        "isImplemented": true
+      },
+      {
+        "id": "information-chart",
+        "name": "Information Chart",
+        "description": "Mini charts with configurable chart styles and volume options",
+        "category": "charts",
+        "isImplemented": true
+      }
+    ],
+    "chart-patterns": [
+      {
+        "id": "chart-pattern-scanner",
+        "name": "Chart Pattern Scanner",
+        "description": "Interactive candlestick chart with automatic detection and highlighting of 24 candlestick patterns",
+        "category": "chart-patterns",
+        "isImplemented": true
+      },
+      {
+        "id": "vector-pattern-scan",
+        "name": "Vector Pattern Scan",
+        "description": "Statistical similarity scanner: finds historical windows matching the current price pattern and reports the forward return distribution",
+        "category": "chart-patterns",
+        "isImplemented": true
+      },
+      {
+        "id": "ict-order-block",
+        "name": "Orderblock Scanner",
+        "description": "Interactive candlestick chart with automatic detection of ICT institutional order blocks (bullish / bearish) plus market-structure and higher-timeframe confluence",
+        "category": "chart-patterns",
+        "isImplemented": true
+      },
+      {
+        "id": "elliott-wave",
+        "name": "Elliott Wave",
+        "description": "Probabilistic Elliott Wave scenarios with primary/alternative counts, Fibonacci targets, invalidation levels, and higher-timeframe context.",
+        "category": "chart-patterns",
+        "isImplemented": true
+      },
+      {
+        "id": "high-low-points-structure",
+        "name": "High & Low Dev",
+        "description": "Highs, Lows & Market Structure — confirmed HH/HL/LH/LL/EH/EL swings, ZigZag, BOS/CHoCH events, trend status panel, and strength score.",
+        "category": "chart-patterns",
+        "isImplemented": true
+      }
+    ],
+    "seasonality": [
+      {
+        "id": "seasonality-forecast",
+        "name": "Seasonality Forecast",
+        "description": "Seasonal forecast with TradingView Lightweight Charts",
+        "category": "seasonality",
+        "isImplemented": true
+      },
+      {
+        "id": "seasonality-forecast-chart",
+        "name": "Seasonality Forecast Chart",
+        "description": "Seasonality forecast chart with TradingView Lightweight Charts",
+        "category": "seasonality",
+        "isImplemented": true
+      },
+      {
+        "id": "seasonality-forecast-table",
+        "name": "Seasonality Forecast Table",
+        "description": "Detailed seasonality forecast table",
+        "category": "seasonality",
+        "isImplemented": true
+      },
+      {
+        "id": "seasonality-performance-table",
+        "name": "Seasonality Performance Table",
+        "description": "Seasonality performance analysis with futures data dropdown",
+        "category": "seasonality",
+        "isImplemented": true
+      },
+      {
+        "id": "seasonality-performance-chart",
+        "name": "Seasonality Performance Chart",
+        "description": "Seasonality performance visualization with TradingView Lightweight Charts",
+        "category": "seasonality",
+        "isImplemented": true
+      }
+    ],
+    "cot": [
+      {
+        "id": "cot-positioning",
+        "name": "COT Positioning",
+        "description": "Commitments of Traders positioning data (formerly Smart Money Report)",
+        "category": "cot",
+        "isImplemented": true
+      },
+      {
+        "id": "cot-chart-view",
+        "name": "COT Chart View",
+        "description": "COT historical data chart with TradingView visualization (formerly Cot History Chart)",
+        "category": "cot",
+        "isImplemented": true
+      },
+      {
+        "id": "cot-table-view",
+        "name": "COT Table View",
+        "description": "COT history table with user date format settings (formerly Cot History Table)",
+        "category": "cot",
+        "isImplemented": true
+      }
+    ],
+    "heatmaps": [
+      {
+        "id": "currency-strength",
+        "name": "Currency Strength",
+        "description": "Currency strength visualization",
+        "category": "heatmaps",
+        "isImplemented": true
+      },
+      {
+        "id": "currency-strength-meter",
+        "name": "Currency Strength Meter",
+        "description": "Currency strength meter display",
+        "category": "heatmaps",
+        "isImplemented": true
+      },
+      {
+        "id": "fx-cross-rates",
+        "name": "FX Cross Rates",
+        "description": "Cross currency rates heatmap (formerly Cross Rates)",
+        "category": "heatmaps",
+        "isImplemented": true
+      },
+      {
+        "id": "ticker-tape",
+        "name": "Ticker Tape",
+        "description": "Ticker tape with multiselect input options (Forex, Commodities, Indices, US Stocks)",
+        "category": "heatmaps",
+        "isImplemented": true
+      },
+      {
+        "id": "heatmap",
+        "name": "Heatmap",
+        "description": "Stock heatmap with options for Stocks, Crypto, and ETFs (formerly Stock Heatmap)",
+        "category": "heatmaps",
+        "isImplemented": true
+      },
+      {
+        "id": "single-ticker",
+        "name": "Single Ticker",
+        "description": "Real-time single symbol price display with large format pricing and percentage change",
+        "category": "heatmaps",
+        "isImplemented": true
+      }
+    ],
+    "news": [
+      {
+        "id": "realtime-headline-ticker",
+        "name": "Realtime Headline Ticker",
+        "description": "Real-time headline ticker widget",
+        "category": "news",
+        "isImplemented": true
+      },
+      {
+        "id": "news-story",
+        "name": "News Story",
+        "description": "Detailed news stories with full articles, images, and market sentiment analysis",
+        "category": "news",
+        "isImplemented": true
+      },
+      {
+        "id": "news-dashboard",
+        "name": "News Dashboard",
+        "description": "Comprehensive news dashboard with categorized stories from global markets",
+        "category": "news",
+        "isImplemented": true
+      },
+      {
+        "id": "news-sentiment",
+        "name": "News Sentiment",
+        "description": "News sentiment analysis chart showing bullish, bearish, and neutral sentiment over time",
+        "category": "news",
+        "isImplemented": true
+      },
+      {
+        "id": "trending-topics",
+        "name": "Trending Topics",
+        "description": "Real-time trending topics and keywords from market news and analysis",
+        "category": "news",
+        "isImplemented": true
+      },
+      {
+        "id": "latest-stories",
+        "name": "Latest Stories",
+        "description": "Latest breaking news and market stories with trending topics view",
+        "category": "news",
+        "isImplemented": true
+      }
+    ],
+    "economic-data": [
+      {
+        "id": "economic-event-calendar",
+        "name": "Economic Event Calendar",
+        "description": "Economic events calendar (formerly Event Calendar)",
+        "category": "economic-data",
+        "isImplemented": true
+      },
+      {
+        "id": "economic-event-calendar-dev",
+        "name": "Economic Event Calendar Dev",
+        "description": "Economic events calendar (formerly Event Calendar)",
+        "category": "economic-data",
+        "isImplemented": true
+      },
+      {
+        "id": "economic-event-countdown",
+        "name": "Economic Event Countdown",
+        "description": "Economic event countdown with real-time updates (formerly Event Countdown)",
+        "category": "economic-data",
+        "isImplemented": true
+      },
+      {
+        "id": "economic-data-charts",
+        "name": "Economic Data Charts",
+        "description": "Macro economic data charts (formerly Macro Charts)",
+        "category": "economic-data",
+        "isImplemented": true
+      },
+      {
+        "id": "economic-data-table",
+        "name": "Economic Data Table",
+        "description": "Macro economic data table (formerly Macro Table)",
+        "category": "economic-data",
+        "isImplemented": true
+      },
+      {
+        "id": "economic-overview",
+        "name": "Economic Overview",
+        "description": "Macro Widget (formerly Macro)",
+        "category": "economic-data",
+        "isImplemented": true
+      },
+      {
+        "id": "macro-map",
+        "name": "Macro Map",
+        "description": "Interactive world map showing PMI, Inflation, and GDP data across major economies with historical heatmap table",
+        "category": "economic-data",
+        "isImplemented": true
+      },
+      {
+        "id": "relative-rotation-graph",
+        "name": "Relative Rotation Graph",
+        "description": "Scatter plot showing relative strength and momentum of securities versus a benchmark with rotational tails",
+        "category": "economic-data",
+        "isImplemented": true
+      },
+      {
+        "id": "market-regime",
+        "name": "Market Regime",
+        "description": "Classify the market into Goldilocks, Reflation, Stagflation, or Deflation via Market Proxy and Fundamental engines",
+        "category": "economic-data",
+        "isImplemented": true
+      }
+    ],
+    "central-banks": [
+      {
+        "id": "interest-rate-probability",
+        "name": "Interest Rate Probability",
+        "description": "Central bank interest rate probability forecast",
+        "category": "central-banks",
+        "isImplemented": true
+      },
+      {
+        "id": "implied-forward-curve",
+        "name": "Implied Forward Curve",
+        "description": "Compare futures implied yields with the current spot curve across meeting dates",
+        "category": "central-banks",
+        "isImplemented": true
+      },
+      {
+        "id": "implied-forward-rates",
+        "name": "Implied Forward Rates",
+        "description": "Step-style view of implied rate changes across fixed announcement dates",
+        "category": "central-banks",
+        "isImplemented": true
+      },
+      {
+        "id": "probability-table",
+        "name": "Probability Table",
+        "description": "Heatmap table of interest rate probabilities for upcoming central bank meetings",
+        "category": "central-banks",
+        "isImplemented": true
+      },
+      {
+        "id": "central-bank-dashboard",
+        "name": "Central Bank Watch",
+        "description": "Market-implied central bank rate-path pricing across major central banks",
+        "category": "central-banks",
+        "isImplemented": true
+      },
+      {
+        "id": "expected-policy-moves",
+        "name": "Expected Policy Moves",
+        "description": "Market-implied next-meeting rate change in basis points across major central banks",
+        "category": "central-banks",
+        "isImplemented": true
+      },
+      {
+        "id": "chart-compare",
+        "name": "Rate Curves",
+        "description": "Compare current central bank rate curves across major central banks",
+        "category": "central-banks",
+        "isImplemented": true
+      },
+      {
+        "id": "table-compare",
+        "name": "Table Compare",
+        "description": "Meeting-by-meeting comparison of implied basis points, adjusted basis points, and rate probabilities",
+        "category": "central-banks",
+        "isImplemented": true
+      },
+      {
+        "id": "end-of-year-chart",
+        "name": "End of year Chart",
+        "description": "Diverging bar chart of projected interest rate changes by year-end across major central banks",
+        "category": "central-banks",
+        "isImplemented": true
+      },
+      {
+        "id": "central-bank-bar-chart",
+        "name": "Central Bank Bar Chart",
+        "description": "100% stacked bar chart of cut, hold, and hike probabilities across upcoming central bank meetings",
+        "category": "central-banks",
+        "isImplemented": true
+      }
+    ],
+    "fixed-income": [
+      {
+        "id": "bond-chart",
+        "name": "Bond Chart",
+        "description": "Bond yields visualization with historical data and time range selection for government bonds",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "yield-curve",
+        "name": "Yield Curve",
+        "description": "Government bond yield curve showing current vs previous day with spread calculation and inversion detection for 8 countries",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "quote-board",
+        "name": "Quote Board",
+        "description": "Multi-country government bond quote board with bid/ask prices, yields, spreads and intraday changes",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "fi-heatmap",
+        "name": "FI Heatmap",
+        "description": "Fixed income heatmap showing yield changes, mid yields, or bid-ask spreads across countries and tenors",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "diff-matrix",
+        "name": "Diff Matrix",
+        "description": "Yield differential matrix showing basis-point spreads between government bond yields across countries for a selected tenor",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "rich-cheap",
+        "name": "Rich/Cheap",
+        "description": "Rich/cheap analysis showing government bond fair value deviations, z-scores, percentile ranks, and OAS spreads",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "forwards",
+        "name": "Forwards",
+        "description": "Government bond forward rates showing 1M, 3M, 6M and 1Y forward yields and changes vs spot",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "market-brief",
+        "name": "Market Brief",
+        "description": "High-level summary of fixed income markets showing key tenor yields, curve slope and recent changes per country",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "fi-spreads",
+        "name": "Spreads",
+        "description": "Government bond yield spreads versus a selected benchmark (US, DE or GB) across tenors and countries",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "curve-diff",
+        "name": "Curve Diff",
+        "description": "Visual comparison of two yield curves showing yield levels and basis-point differences across tenors",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "curve-states",
+        "name": "Curve States",
+        "description": "Yield curve shape classification (Normal, Inverted, Flat, Steepening, Flattening) with slope metrics per country",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "carry-roll",
+        "name": "Carry & Roll",
+        "description": "Carry income and roll-down analysis showing expected return from holding bonds over 1M, 3M and 6M horizons",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "fi-correlation",
+        "name": "Correlation",
+        "description": "Cross-country yield correlation matrix for a selected tenor and lookback period",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "fi-liquidity",
+        "name": "Liquidity",
+        "description": "Government bond market liquidity metrics including bid-ask spreads, trading volumes and liquidity scores",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "fi-pca",
+        "name": "PCA",
+        "description": "Principal Component Analysis of yield curves decomposing movements into Level, Slope and Curvature factors",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "spread-history",
+        "name": "Spread History",
+        "description": "Historical time-series chart of government bond yield spreads between selected country pairs",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "fi-percentiles",
+        "name": "Percentiles",
+        "description": "Historical percentile ranks of current yields showing where they stand relative to 1Y, 3Y and 5Y history",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "yields-ts",
+        "name": "Yields TS",
+        "description": "Multi-tenor yield time series chart for a selected country showing 2Y, 5Y, 10Y and 30Y yield history",
+        "category": "fixed-income",
+        "isImplemented": true
+      },
+      {
+        "id": "snapshots-db",
+        "name": "Snapshots DB",
+        "description": "Database of saved yield curve snapshots for historical comparison and analysis",
+        "category": "fixed-income",
+        "isImplemented": true
+      }
+    ],
+    "retail-sentiment": [
+      {
+        "id": "dmx-positioning",
+        "name": "DMX Positioning",
+        "description": "Retail trader positioning data from major FX brokers showing long vs short positions",
+        "category": "retail-sentiment",
+        "isImplemented": true
+      },
+      {
+        "id": "dmx-chart",
+        "name": "DMX Chart",
+        "description": "Retail trader positioning chart over time with multiple chart types and data views",
+        "category": "retail-sentiment",
+        "isImplemented": true
+      },
+      {
+        "id": "dmx-statistics-table",
+        "name": "DMX Statistics Table",
+        "description": "Detailed retail trader positioning statistics including positions, prices, ratios, and volumes",
+        "category": "retail-sentiment",
+        "isImplemented": true
+      },
+      {
+        "id": "dmx-overview",
+        "name": "DMX Overview",
+        "description": "Overview of retail trader positioning across multiple currency pairs with sorting options",
+        "category": "retail-sentiment",
+        "isImplemented": true
+      },
+      {
+        "id": "dmx-open-interest",
+        "name": "DMX Open Interest",
+        "description": "Open interest for various currency pairs over time with filtering and pair selection",
+        "category": "retail-sentiment",
+        "isImplemented": true
+      }
+    ],
+    "research": [
+      {
+        "id": "research-files",
+        "name": "Research Files",
+        "description": "Research papers and documents from various financial institutions",
+        "category": "research",
+        "isImplemented": true
+      },
+      {
+        "id": "smart-bias-tracker",
+        "name": "Smart Bias Tracker",
+        "description": "Currency bias tracker with fundamental, technical, and sentiment analysis",
+        "category": "research",
+        "isImplemented": true
+      },
+      {
+        "id": "smart-bias-history",
+        "name": "Smart Bias History",
+        "description": "Historical weekly currency bias visualization",
+        "category": "research",
+        "isImplemented": true
+      },
+      {
+        "id": "week-ahead",
+        "name": "Week Ahead",
+        "description": "Timeline of the coming week’s high-impact macro catalysts",
+        "category": "research",
+        "isImplemented": true
+      },
+      {
+        "id": "bank-trades",
+        "name": "Bank Trades",
+        "description": "Institutional trade blotter with entries, targets, and rationale",
+        "category": "research",
+        "isImplemented": true
+      },
+      {
+        "id": "bank-trades-dev",
+        "name": "Bank Trades Dev",
+        "description": "AI-extracted bank trades and views with card-based filtering",
+        "category": "research",
+        "isImplemented": true
+      },
+      {
+        "id": "scenario-desk",
+        "name": "Scenario Desk",
+        "description": "Scenario planning for key economic events with trade ideas",
+        "category": "research",
+        "isImplemented": true
+      },
+      {
+        "id": "macro-briefing",
+        "name": "Macro Briefing",
+        "description": "Curated analyst commentary with actionable macro insights",
+        "category": "research",
+        "isImplemented": true
+      },
+      {
+        "id": "today-outlook",
+        "name": "Today's Outlook",
+        "description": "What to watch for in today's session.",
+        "category": "research",
+        "isImplemented": false
+      },
+      {
+        "id": "fx-bank-forecasts",
+        "name": "FX Bank Forecasts",
+        "description": "Multi-quarter FX forecasts from major global banks",
+        "category": "research",
+        "isImplemented": true
+      }
+    ],
+    "sentiment": [
+      {
+        "id": "market-strength",
+        "name": "Market Strength",
+        "description": "Breadth, momentum & sector signals.",
+        "category": "sentiment",
+        "isImplemented": false
+      },
+      {
+        "id": "risk-sentiment",
+        "name": "Risk Sentiment",
+        "description": "Market risk sentiment indicator with historical charts",
+        "category": "sentiment",
+        "isImplemented": true
+      }
+    ],
+    "scanner": [
+      {
+        "id": "overview-list",
+        "name": "Overview List",
+        "description": "Comprehensive market scanner with technical indicators, fundamentals, performance metrics, and real-time market analysis",
+        "category": "scanner",
+        "isImplemented": true
+      },
+      {
+        "id": "market-data",
+        "name": "Market Data",
+        "description": "Real-time market data across indices, futures, bonds, commodities, forex, and crypto with performance metrics",
+        "category": "scanner",
+        "isImplemented": true
+      },
+      {
+        "id": "gauge-overview",
+        "name": "Gauge Overview",
+        "description": "Overall technical signal based on multiple indicators with visual gauge and market sentiment breakdown",
+        "category": "scanner",
+        "isImplemented": true
+      }
+    ],
+    "options": [
+      {
+        "id": "fx-options-volatility-levels",
+        "name": "FX Options Volatility Levels",
+        "description": "FX volatility levels chart with daily, weekly, and monthly levels",
+        "category": "options",
+        "isImplemented": true
+      },
+      {
+        "id": "fx-options-expiry",
+        "name": "FX Options Expiry",
+        "description": "FX options expiry dates and strike prices with notional amounts",
+        "category": "options",
+        "isImplemented": true
+      },
+      {
+        "id": "fx-options-risk-reversals",
+        "name": "FX Options Risk Reversals",
+        "description": "Monitor call vs put risk reversals with line chart toggles",
+        "category": "options",
+        "isImplemented": true
+      }
+    ],
+    "volatility": [
+      {
+        "id": "distribution-chart",
+        "name": "Distribution Chart",
+        "description": "Price distribution chart with bell curve overlay and histogram",
+        "category": "volatility",
+        "isImplemented": true
+      },
+      {
+        "id": "average-daily-range",
+        "name": "Average Daily Range",
+        "description": "Average price ranges for different time periods with current price indicator",
+        "category": "volatility",
+        "isImplemented": true
+      },
+      {
+        "id": "average-range-histogram",
+        "name": "Average Range Histogram",
+        "description": "Histogram showing average ranges by day of week, week of month, or month",
+        "category": "volatility",
+        "isImplemented": true
+      },
+      {
+        "id": "range-probability",
+        "name": "Range Probability",
+        "description": "Histogram data showing price range probabilities and cumulative probabilities",
+        "category": "volatility",
+        "isImplemented": true
+      },
+      {
+        "id": "distribution-stats",
+        "name": "Distribution Stats",
+        "description": "Statistical measures of price distribution including mean, median, standard deviation",
+        "category": "volatility",
+        "isImplemented": true
+      },
+      {
+        "id": "volatility-statistics",
+        "name": "Volatility Statistics",
+        "description": "Historical volatility statistics with daily price movements and ATR",
+        "category": "volatility",
+        "isImplemented": true
+      }
+    ],
+    "market-structure": [
+      {
+        "id": "supply-&-demand-areas",
+        "name": "Supply & Demand Areas",
+        "description": "Identify and visualize supply and demand zones on price charts with automatic detection and manual drawing tools",
+        "category": "market-structure",
+        "isImplemented": true
+      },
+      {
+        "id": "high-&-low-points",
+        "name": "High & Low Points",
+        "description": "Track and display significant high & low price points with swing analysis and trend identification",
+        "category": "market-structure",
+        "isImplemented": true
+      },
+      {
+        "id": "session-ranges",
+        "name": "Session Ranges",
+        "description": "Visualize trading session ranges including Asian, London, and New York sessions with liquidity ranges and open values",
+        "category": "market-structure",
+        "isImplemented": true
+      },
+      {
+        "id": "percent-monthly-targets",
+        "name": "Percent Monthly Targets",
+        "description": "Visualize percent monthly targets on price charts for trading analysis with configurable module and symbol settings",
+        "category": "market-structure",
+        "isImplemented": true
+      },
+      {
+        "id": "exponential-moving-average",
+        "name": "Exponential Moving Average",
+        "description": "TradingView advanced chart with EMA overlay. Supports Retail/Institutional presets and configurable module, symbol, and timeframe.",
+        "category": "market-structure",
+        "isImplemented": true
+      },
+      {
+        "id": "supertrend",
+        "name": "Supertrend",
+        "description": "TradingView advanced chart with Supertrend overlay and configurable module, symbol, and timeframe.",
+        "category": "market-structure",
+        "isImplemented": true
+      },
+      {
+        "id": "quarter-movement",
+        "name": "Quarter Movement",
+        "description": "Visualizes quarterly price movements with TradingView advanced charts. Shows start and end prices for each quarter with percentage change indicators and WebSocket real-time updates.",
+        "category": "market-structure",
+        "isImplemented": true
+      }
+    ],
+    "stock-analysis": [
+      {
+        "id": "balance-sheet",
+        "name": "Balance Sheet",
+        "description": "Annual balance sheet showing assets, liabilities, and shareholders' equity",
+        "category": "stock-analysis",
+        "isImplemented": true
+      },
+      {
+        "id": "income-statement",
+        "name": "Income Statement",
+        "description": "Annual income statement showing revenue, expenses, and net income",
+        "category": "stock-analysis",
+        "isImplemented": true
+      },
+      {
+        "id": "cash-flow-report",
+        "name": "Cash Flow Report",
+        "description": "Annual cash flow statement showing operating, investing, and financing activities",
+        "category": "stock-analysis",
+        "isImplemented": true
+      },
+      {
+        "id": "analyst-recommendations",
+        "name": "Analyst Recommendations",
+        "description": "Analyst consensus rating and distribution with historical rating trends",
+        "category": "stock-analysis",
+        "isImplemented": true
+      },
+      {
+        "id": "price-targets",
+        "name": "Price targets",
+        "description": "Analyst price targets with historical price chart and projection lines",
+        "category": "stock-analysis",
+        "isImplemented": true
+      },
+      {
+        "id": "recent-analyst-actions",
+        "name": "Recent Analyst Actions",
+        "description": "Recent analyst rating changes and price target updates",
+        "category": "stock-analysis",
+        "isImplemented": true
+      },
+      {
+        "id": "insider-transactions",
+        "name": "Insider Transactions",
+        "description": "Recent insider trading transactions showing buys and sells by company executives",
+        "category": "stock-analysis",
+        "isImplemented": true
+      },
+      {
+        "id": "institutional-shareholders",
+        "name": "Institutional Shareholders",
+        "description": "Top institutional shareholders with ownership distribution and holdings table",
+        "category": "stock-analysis",
+        "isImplemented": true
+      }
+    ],
+    "orderflow": [
+      {
+        "id": "position-book",
+        "name": "Position Book",
+        "description": "Real-time position book showing order flow and market depth with bid/ask levels",
+        "category": "orderflow",
+        "isImplemented": true
+      },
+      {
+        "id": "orderbook",
+        "name": "Orderbook",
+        "description": "Live order book displaying current buy and sell orders with price levels and volumes",
+        "category": "orderflow",
+        "isImplemented": true
+      }
+    ]
+  },
+  "widgets": [
+    {
+      "id": "tab-menu-widget",
+      "name": "Tab Menu Widget",
+      "description": "A container widget with tabs and a + button to add new tabs",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "technical-charts",
+      "name": "Technical Charts",
+      "description": "Advanced technical analysis charts with drawing tools, indicators, and multiple chart types",
+      "category": "charts",
+      "isImplemented": true
+    },
+    {
+      "id": "price-chart",
+      "name": "Price Chart",
+      "description": "Professional trading chart with advanced technical analysis, drawing tools, and 100+ indicators using TradingView Advanced Charts",
+      "category": "charts",
+      "isImplemented": true
+    },
+    {
+      "id": "information-chart",
+      "name": "Information Chart",
+      "description": "Mini charts with configurable chart styles and volume options",
+      "category": "charts",
+      "isImplemented": true
+    },
+    {
+      "id": "chart-pattern-scanner",
+      "name": "Chart Pattern Scanner",
+      "description": "Interactive candlestick chart with automatic detection and highlighting of 24 candlestick patterns",
+      "category": "chart-patterns",
+      "isImplemented": true
+    },
+    {
+      "id": "vector-pattern-scan",
+      "name": "Vector Pattern Scan",
+      "description": "Statistical similarity scanner: finds historical windows matching the current price pattern and reports the forward return distribution",
+      "category": "chart-patterns",
+      "isImplemented": true
+    },
+    {
+      "id": "ict-order-block",
+      "name": "Orderblock Scanner",
+      "description": "Interactive candlestick chart with automatic detection of ICT institutional order blocks (bullish / bearish) plus market-structure and higher-timeframe confluence",
+      "category": "chart-patterns",
+      "isImplemented": true
+    },
+    {
+      "id": "seasonality-forecast",
+      "name": "Seasonality Forecast",
+      "description": "Seasonal forecast with TradingView Lightweight Charts",
+      "category": "seasonality",
+      "isImplemented": true
+    },
+    {
+      "id": "seasonality-forecast-chart",
+      "name": "Seasonality Forecast Chart",
+      "description": "Seasonality forecast chart with TradingView Lightweight Charts",
+      "category": "seasonality",
+      "isImplemented": true
+    },
+    {
+      "id": "seasonality-forecast-table",
+      "name": "Seasonality Forecast Table",
+      "description": "Detailed seasonality forecast table",
+      "category": "seasonality",
+      "isImplemented": true
+    },
+    {
+      "id": "seasonality-performance-table",
+      "name": "Seasonality Performance Table",
+      "description": "Seasonality performance analysis with futures data dropdown",
+      "category": "seasonality",
+      "isImplemented": true
+    },
+    {
+      "id": "seasonality-performance-chart",
+      "name": "Seasonality Performance Chart",
+      "description": "Seasonality performance visualization with TradingView Lightweight Charts",
+      "category": "seasonality",
+      "isImplemented": true
+    },
+    {
+      "id": "cot-positioning",
+      "name": "COT Positioning",
+      "description": "Commitments of Traders positioning data (formerly Smart Money Report)",
+      "category": "cot",
+      "isImplemented": true
+    },
+    {
+      "id": "cot-chart-view",
+      "name": "COT Chart View",
+      "description": "COT historical data chart with TradingView visualization (formerly Cot History Chart)",
+      "category": "cot",
+      "isImplemented": true
+    },
+    {
+      "id": "cot-table-view",
+      "name": "COT Table View",
+      "description": "COT history table with user date format settings (formerly Cot History Table)",
+      "category": "cot",
+      "isImplemented": true
+    },
+    {
+      "id": "currency-strength",
+      "name": "Currency Strength",
+      "description": "Currency strength visualization",
+      "category": "heatmaps",
+      "isImplemented": true
+    },
+    {
+      "id": "currency-strength-meter",
+      "name": "Currency Strength Meter",
+      "description": "Currency strength meter display",
+      "category": "heatmaps",
+      "isImplemented": true
+    },
+    {
+      "id": "fx-cross-rates",
+      "name": "FX Cross Rates",
+      "description": "Cross currency rates heatmap (formerly Cross Rates)",
+      "category": "heatmaps",
+      "isImplemented": true
+    },
+    {
+      "id": "ticker-tape",
+      "name": "Ticker Tape",
+      "description": "Ticker tape with multiselect input options (Forex, Commodities, Indices, US Stocks)",
+      "category": "heatmaps",
+      "isImplemented": true
+    },
+    {
+      "id": "heatmap",
+      "name": "Heatmap",
+      "description": "Stock heatmap with options for Stocks, Crypto, and ETFs (formerly Stock Heatmap)",
+      "category": "heatmaps",
+      "isImplemented": true
+    },
+    {
+      "id": "single-ticker",
+      "name": "Single Ticker",
+      "description": "Real-time single symbol price display with large format pricing and percentage change",
+      "category": "heatmaps",
+      "isImplemented": true
+    },
+    {
+      "id": "realtime-headline-ticker",
+      "name": "Realtime Headline Ticker",
+      "description": "Real-time headline ticker widget",
+      "category": "news",
+      "isImplemented": true
+    },
+    {
+      "id": "news-story",
+      "name": "News Story",
+      "description": "Detailed news stories with full articles, images, and market sentiment analysis",
+      "category": "news",
+      "isImplemented": true
+    },
+    {
+      "id": "news-dashboard",
+      "name": "News Dashboard",
+      "description": "Comprehensive news dashboard with categorized stories from global markets",
+      "category": "news",
+      "isImplemented": true
+    },
+    {
+      "id": "news-sentiment",
+      "name": "News Sentiment",
+      "description": "News sentiment analysis chart showing bullish, bearish, and neutral sentiment over time",
+      "category": "news",
+      "isImplemented": true
+    },
+    {
+      "id": "trending-topics",
+      "name": "Trending Topics",
+      "description": "Real-time trending topics and keywords from market news and analysis",
+      "category": "news",
+      "isImplemented": true
+    },
+    {
+      "id": "latest-stories",
+      "name": "Latest Stories",
+      "description": "Latest breaking news and market stories with trending topics view",
+      "category": "news",
+      "isImplemented": true
+    },
+    {
+      "id": "economic-event-calendar",
+      "name": "Economic Event Calendar",
+      "description": "Economic events calendar (formerly Event Calendar)",
+      "category": "economic-data",
+      "isImplemented": true
+    },
+    {
+      "id": "economic-event-calendar-dev",
+      "name": "Economic Event Calendar Dev",
+      "description": "Economic events calendar (formerly Event Calendar)",
+      "category": "economic-data",
+      "isImplemented": true
+    },
+    {
+      "id": "economic-event-countdown",
+      "name": "Economic Event Countdown",
+      "description": "Economic event countdown with real-time updates (formerly Event Countdown)",
+      "category": "economic-data",
+      "isImplemented": true
+    },
+    {
+      "id": "economic-data-charts",
+      "name": "Economic Data Charts",
+      "description": "Macro economic data charts (formerly Macro Charts)",
+      "category": "economic-data",
+      "isImplemented": true
+    },
+    {
+      "id": "economic-data-table",
+      "name": "Economic Data Table",
+      "description": "Macro economic data table (formerly Macro Table)",
+      "category": "economic-data",
+      "isImplemented": true
+    },
+    {
+      "id": "economic-overview",
+      "name": "Economic Overview",
+      "description": "Macro Widget (formerly Macro)",
+      "category": "economic-data",
+      "isImplemented": true
+    },
+    {
+      "id": "macro-map",
+      "name": "Macro Map",
+      "description": "Interactive world map showing PMI, Inflation, and GDP data across major economies with historical heatmap table",
+      "category": "economic-data",
+      "isImplemented": true
+    },
+    {
+      "id": "relative-rotation-graph",
+      "name": "Relative Rotation Graph",
+      "description": "Scatter plot showing relative strength and momentum of securities versus a benchmark with rotational tails",
+      "category": "economic-data",
+      "isImplemented": true
+    },
+    {
+      "id": "market-regime",
+      "name": "Market Regime",
+      "description": "Classify the market into Goldilocks, Reflation, Stagflation, or Deflation via Market Proxy and Fundamental engines",
+      "category": "economic-data",
+      "isImplemented": true
+    },
+    {
+      "id": "interest-rate-probability",
+      "name": "Interest Rate Probability",
+      "description": "Central bank interest rate probability forecast",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "implied-forward-curve",
+      "name": "Implied Forward Curve",
+      "description": "Compare futures implied yields with the current spot curve across meeting dates",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "implied-forward-rates",
+      "name": "Implied Forward Rates",
+      "description": "Step-style view of implied rate changes across fixed announcement dates",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "probability-table",
+      "name": "Probability Table",
+      "description": "Heatmap table of interest rate probabilities for upcoming central bank meetings",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "central-bank-dashboard",
+      "name": "Central Bank Watch",
+      "description": "Market-implied central bank rate-path pricing across major central banks",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "expected-policy-moves",
+      "name": "Expected Policy Moves",
+      "description": "Market-implied next-meeting rate change in basis points across major central banks",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "chart-compare",
+      "name": "Rate Curves",
+      "description": "Compare current central bank rate curves across major central banks",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "table-compare",
+      "name": "Table Compare",
+      "description": "Meeting-by-meeting comparison of implied basis points, adjusted basis points, and rate probabilities",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "end-of-year-chart",
+      "name": "End of year Chart",
+      "description": "Diverging bar chart of projected interest rate changes by year-end across major central banks",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "central-bank-bar-chart",
+      "name": "Central Bank Bar Chart",
+      "description": "100% stacked bar chart of cut, hold, and hike probabilities across upcoming central bank meetings",
+      "category": "central-banks",
+      "isImplemented": true
+    },
+    {
+      "id": "bond-chart",
+      "name": "Bond Chart",
+      "description": "Bond yields visualization with historical data and time range selection for government bonds",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "yield-curve",
+      "name": "Yield Curve",
+      "description": "Government bond yield curve showing current vs previous day with spread calculation and inversion detection for 8 countries",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "quote-board",
+      "name": "Quote Board",
+      "description": "Multi-country government bond quote board with bid/ask prices, yields, spreads and intraday changes",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "fi-heatmap",
+      "name": "FI Heatmap",
+      "description": "Fixed income heatmap showing yield changes, mid yields, or bid-ask spreads across countries and tenors",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "diff-matrix",
+      "name": "Diff Matrix",
+      "description": "Yield differential matrix showing basis-point spreads between government bond yields across countries for a selected tenor",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "rich-cheap",
+      "name": "Rich/Cheap",
+      "description": "Rich/cheap analysis showing government bond fair value deviations, z-scores, percentile ranks, and OAS spreads",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "forwards",
+      "name": "Forwards",
+      "description": "Government bond forward rates showing 1M, 3M, 6M and 1Y forward yields and changes vs spot",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "market-brief",
+      "name": "Market Brief",
+      "description": "High-level summary of fixed income markets showing key tenor yields, curve slope and recent changes per country",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "fi-spreads",
+      "name": "Spreads",
+      "description": "Government bond yield spreads versus a selected benchmark (US, DE or GB) across tenors and countries",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "curve-diff",
+      "name": "Curve Diff",
+      "description": "Visual comparison of two yield curves showing yield levels and basis-point differences across tenors",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "curve-states",
+      "name": "Curve States",
+      "description": "Yield curve shape classification (Normal, Inverted, Flat, Steepening, Flattening) with slope metrics per country",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "carry-roll",
+      "name": "Carry & Roll",
+      "description": "Carry income and roll-down analysis showing expected return from holding bonds over 1M, 3M and 6M horizons",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "fi-correlation",
+      "name": "Correlation",
+      "description": "Cross-country yield correlation matrix for a selected tenor and lookback period",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "fi-liquidity",
+      "name": "Liquidity",
+      "description": "Government bond market liquidity metrics including bid-ask spreads, trading volumes and liquidity scores",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "fi-pca",
+      "name": "PCA",
+      "description": "Principal Component Analysis of yield curves decomposing movements into Level, Slope and Curvature factors",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "spread-history",
+      "name": "Spread History",
+      "description": "Historical time-series chart of government bond yield spreads between selected country pairs",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "fi-percentiles",
+      "name": "Percentiles",
+      "description": "Historical percentile ranks of current yields showing where they stand relative to 1Y, 3Y and 5Y history",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "yields-ts",
+      "name": "Yields TS",
+      "description": "Multi-tenor yield time series chart for a selected country showing 2Y, 5Y, 10Y and 30Y yield history",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "snapshots-db",
+      "name": "Snapshots DB",
+      "description": "Database of saved yield curve snapshots for historical comparison and analysis",
+      "category": "fixed-income",
+      "isImplemented": true
+    },
+    {
+      "id": "dmx-positioning",
+      "name": "DMX Positioning",
+      "description": "Retail trader positioning data from major FX brokers showing long vs short positions",
+      "category": "retail-sentiment",
+      "isImplemented": true
+    },
+    {
+      "id": "dmx-chart",
+      "name": "DMX Chart",
+      "description": "Retail trader positioning chart over time with multiple chart types and data views",
+      "category": "retail-sentiment",
+      "isImplemented": true
+    },
+    {
+      "id": "dmx-statistics-table",
+      "name": "DMX Statistics Table",
+      "description": "Detailed retail trader positioning statistics including positions, prices, ratios, and volumes",
+      "category": "retail-sentiment",
+      "isImplemented": true
+    },
+    {
+      "id": "dmx-overview",
+      "name": "DMX Overview",
+      "description": "Overview of retail trader positioning across multiple currency pairs with sorting options",
+      "category": "retail-sentiment",
+      "isImplemented": true
+    },
+    {
+      "id": "dmx-open-interest",
+      "name": "DMX Open Interest",
+      "description": "Open interest for various currency pairs over time with filtering and pair selection",
+      "category": "retail-sentiment",
+      "isImplemented": true
+    },
+    {
+      "id": "research-files",
+      "name": "Research Files",
+      "description": "Research papers and documents from various financial institutions",
+      "category": "research",
+      "isImplemented": true
+    },
+    {
+      "id": "smart-bias-tracker",
+      "name": "Smart Bias Tracker",
+      "description": "Currency bias tracker with fundamental, technical, and sentiment analysis",
+      "category": "research",
+      "isImplemented": true
+    },
+    {
+      "id": "smart-bias-history",
+      "name": "Smart Bias History",
+      "description": "Historical weekly currency bias visualization",
+      "category": "research",
+      "isImplemented": true
+    },
+    {
+      "id": "week-ahead",
+      "name": "Week Ahead",
+      "description": "Timeline of the coming week’s high-impact macro catalysts",
+      "category": "research",
+      "isImplemented": true
+    },
+    {
+      "id": "bank-trades",
+      "name": "Bank Trades",
+      "description": "Institutional trade blotter with entries, targets, and rationale",
+      "category": "research",
+      "isImplemented": true
+    },
+    {
+      "id": "bank-trades-dev",
+      "name": "Bank Trades Dev",
+      "description": "AI-extracted bank trades and views with card-based filtering",
+      "category": "research",
+      "isImplemented": true
+    },
+    {
+      "id": "scenario-desk",
+      "name": "Scenario Desk",
+      "description": "Scenario planning for key economic events with trade ideas",
+      "category": "research",
+      "isImplemented": true
+    },
+    {
+      "id": "macro-briefing",
+      "name": "Macro Briefing",
+      "description": "Curated analyst commentary with actionable macro insights",
+      "category": "research",
+      "isImplemented": true
+    },
+    {
+      "id": "today-outlook",
+      "name": "Today's Outlook",
+      "description": "What to watch for in today's session.",
+      "category": "research",
+      "isImplemented": false
+    },
+    {
+      "id": "market-strength",
+      "name": "Market Strength",
+      "description": "Breadth, momentum & sector signals.",
+      "category": "sentiment",
+      "isImplemented": false
+    },
+    {
+      "id": "fx-bank-forecasts",
+      "name": "FX Bank Forecasts",
+      "description": "Multi-quarter FX forecasts from major global banks",
+      "category": "research",
+      "isImplemented": true
+    },
+    {
+      "id": "overview-list",
+      "name": "Overview List",
+      "description": "Comprehensive market scanner with technical indicators, fundamentals, performance metrics, and real-time market analysis",
+      "category": "scanner",
+      "isImplemented": true
+    },
+    {
+      "id": "market-data",
+      "name": "Market Data",
+      "description": "Real-time market data across indices, futures, bonds, commodities, forex, and crypto with performance metrics",
+      "category": "scanner",
+      "isImplemented": true
+    },
+    {
+      "id": "gauge-overview",
+      "name": "Gauge Overview",
+      "description": "Overall technical signal based on multiple indicators with visual gauge and market sentiment breakdown",
+      "category": "scanner",
+      "isImplemented": true
+    },
+    {
+      "id": "fx-options-volatility-levels",
+      "name": "FX Options Volatility Levels",
+      "description": "FX volatility levels chart with daily, weekly, and monthly levels",
+      "category": "options",
+      "isImplemented": true
+    },
+    {
+      "id": "fx-options-expiry",
+      "name": "FX Options Expiry",
+      "description": "FX options expiry dates and strike prices with notional amounts",
+      "category": "options",
+      "isImplemented": true
+    },
+    {
+      "id": "fx-options-risk-reversals",
+      "name": "FX Options Risk Reversals",
+      "description": "Monitor call vs put risk reversals with line chart toggles",
+      "category": "options",
+      "isImplemented": true
+    },
+    {
+      "id": "distribution-chart",
+      "name": "Distribution Chart",
+      "description": "Price distribution chart with bell curve overlay and histogram",
+      "category": "volatility",
+      "isImplemented": true
+    },
+    {
+      "id": "average-daily-range",
+      "name": "Average Daily Range",
+      "description": "Average price ranges for different time periods with current price indicator",
+      "category": "volatility",
+      "isImplemented": true
+    },
+    {
+      "id": "average-range-histogram",
+      "name": "Average Range Histogram",
+      "description": "Histogram showing average ranges by day of week, week of month, or month",
+      "category": "volatility",
+      "isImplemented": true
+    },
+    {
+      "id": "range-probability",
+      "name": "Range Probability",
+      "description": "Histogram data showing price range probabilities and cumulative probabilities",
+      "category": "volatility",
+      "isImplemented": true
+    },
+    {
+      "id": "distribution-stats",
+      "name": "Distribution Stats",
+      "description": "Statistical measures of price distribution including mean, median, standard deviation",
+      "category": "volatility",
+      "isImplemented": true
+    },
+    {
+      "id": "volatility-statistics",
+      "name": "Volatility Statistics",
+      "description": "Historical volatility statistics with daily price movements and ATR",
+      "category": "volatility",
+      "isImplemented": true
+    },
+    {
+      "id": "risk-sentiment",
+      "name": "Risk Sentiment",
+      "description": "Market risk sentiment indicator with historical charts",
+      "category": "sentiment",
+      "isImplemented": true
+    },
+    {
+      "id": "supply-&-demand-areas",
+      "name": "Supply & Demand Areas",
+      "description": "Identify and visualize supply and demand zones on price charts with automatic detection and manual drawing tools",
+      "category": "market-structure",
+      "isImplemented": true
+    },
+    {
+      "id": "high-&-low-points",
+      "name": "High & Low Points",
+      "description": "Track and display significant high & low price points with swing analysis and trend identification",
+      "category": "market-structure",
+      "isImplemented": true
+    },
+    {
+      "id": "session-ranges",
+      "name": "Session Ranges",
+      "description": "Visualize trading session ranges including Asian, London, and New York sessions with liquidity ranges and open values",
+      "category": "market-structure",
+      "isImplemented": true
+    },
+    {
+      "id": "percent-monthly-targets",
+      "name": "Percent Monthly Targets",
+      "description": "Visualize percent monthly targets on price charts for trading analysis with configurable module and symbol settings",
+      "category": "market-structure",
+      "isImplemented": true
+    },
+    {
+      "id": "exponential-moving-average",
+      "name": "Exponential Moving Average",
+      "description": "TradingView advanced chart with EMA overlay. Supports Retail/Institutional presets and configurable module, symbol, and timeframe.",
+      "category": "market-structure",
+      "isImplemented": true
+    },
+    {
+      "id": "supertrend",
+      "name": "Supertrend",
+      "description": "TradingView advanced chart with Supertrend overlay and configurable module, symbol, and timeframe.",
+      "category": "market-structure",
+      "isImplemented": true
+    },
+    {
+      "id": "quarter-movement",
+      "name": "Quarter Movement",
+      "description": "Visualizes quarterly price movements with TradingView advanced charts. Shows start and end prices for each quarter with percentage change indicators and WebSocket real-time updates.",
+      "category": "market-structure",
+      "isImplemented": true
+    },
+    {
+      "id": "elliott-wave",
+      "name": "Elliott Wave",
+      "description": "Probabilistic Elliott Wave scenarios with primary/alternative counts, Fibonacci targets, invalidation levels, and higher-timeframe context.",
+      "category": "chart-patterns",
+      "isImplemented": true
+    },
+    {
+      "id": "high-low-points-structure",
+      "name": "High & Low Dev",
+      "description": "Highs, Lows & Market Structure — confirmed HH/HL/LH/LL/EH/EL swings, ZigZag, BOS/CHoCH events, trend status panel, and strength score.",
+      "category": "chart-patterns",
+      "isImplemented": true
+    },
+    {
+      "id": "world-clock",
+      "name": "World Clock",
+      "description": "Display multiple timezones with current time and weather",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "ticklist",
+      "name": "Ticklist",
+      "description": "Task management widget with checkboxes and task tracking",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "notes",
+      "name": "Notes",
+      "description": "Rich text notes widget with formatting toolbar",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "exchange-market-hours",
+      "name": "Exchange Market Hours",
+      "description": "Display global forex market hours with timeline, table, and map views",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "moodboard",
+      "name": "Moodboard",
+      "description": "Interactive mood board with text, images, and drawing tools",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "trading-journal",
+      "name": "Trading Journal",
+      "description": "Trade tracking and analysis with calendar view and statistics",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "scoring-table",
+      "name": "Scoring Table",
+      "description": "Currency bias scoring table with indicators and categories",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "watchlist",
+      "name": "Watchlist",
+      "description": "Monitor favorite assets in real-time with price tracking and order management",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "neurobeats-player",
+      "name": "NeuroBeats Player",
+      "description": "Binaural beat audio player with focus, deep work, creativity, and relaxation tracks for enhanced productivity",
+      "category": "Others",
+      "isImplemented": true
+    },
+    {
+      "id": "balance-sheet",
+      "name": "Balance Sheet",
+      "description": "Annual balance sheet showing assets, liabilities, and shareholders' equity",
+      "category": "stock-analysis",
+      "isImplemented": true
+    },
+    {
+      "id": "income-statement",
+      "name": "Income Statement",
+      "description": "Annual income statement showing revenue, expenses, and net income",
+      "category": "stock-analysis",
+      "isImplemented": true
+    },
+    {
+      "id": "cash-flow-report",
+      "name": "Cash Flow Report",
+      "description": "Annual cash flow statement showing operating, investing, and financing activities",
+      "category": "stock-analysis",
+      "isImplemented": true
+    },
+    {
+      "id": "analyst-recommendations",
+      "name": "Analyst Recommendations",
+      "description": "Analyst consensus rating and distribution with historical rating trends",
+      "category": "stock-analysis",
+      "isImplemented": true
+    },
+    {
+      "id": "price-targets",
+      "name": "Price targets",
+      "description": "Analyst price targets with historical price chart and projection lines",
+      "category": "stock-analysis",
+      "isImplemented": true
+    },
+    {
+      "id": "recent-analyst-actions",
+      "name": "Recent Analyst Actions",
+      "description": "Recent analyst rating changes and price target updates",
+      "category": "stock-analysis",
+      "isImplemented": true
+    },
+    {
+      "id": "insider-transactions",
+      "name": "Insider Transactions",
+      "description": "Recent insider trading transactions showing buys and sells by company executives",
+      "category": "stock-analysis",
+      "isImplemented": true
+    },
+    {
+      "id": "institutional-shareholders",
+      "name": "Institutional Shareholders",
+      "description": "Top institutional shareholders with ownership distribution and holdings table",
+      "category": "stock-analysis",
+      "isImplemented": true
+    },
+    {
+      "id": "position-book",
+      "name": "Position Book",
+      "description": "Real-time position book showing order flow and market depth with bid/ask levels",
+      "category": "orderflow",
+      "isImplemented": true
+    },
+    {
+      "id": "orderbook",
+      "name": "Orderbook",
+      "description": "Live order book displaying current buy and sell orders with price levels and volumes",
+      "category": "orderflow",
+      "isImplemented": true
+    }
+  ]
+}
