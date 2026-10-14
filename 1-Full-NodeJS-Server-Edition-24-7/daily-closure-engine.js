@@ -62,7 +62,11 @@ function loadStaticDatasets() {
 }
 
 async function getCompletedBars(sym) {
-  const bars = await liveEngine.fetchTradingViewCfdBars(sym, "1D", 400).catch(() => []);
+  let bars = await liveEngine.fetchTradingViewCfdBars(sym, "1D", 400).catch(() => []);
+  if (!bars || bars.length < 30) {
+    await new Promise(r => setTimeout(r, 900));
+    bars = await liveEngine.fetchTradingViewCfdBars(sym, "1D", 400).catch(() => []);
+  }
   const today = todayUTC();
   return (bars || [])
     .map(b => ({ date: String(b.date || (b.tsSec ? new Date(b.tsSec * 1000).toISOString().slice(0, 10) : "")), o: num(b.open), h: num(b.high), l: num(b.low), c: num(b.close) }))
@@ -147,12 +151,14 @@ function ccChat(messages, maxTokens = 6000) {
         });
         const content = out && out.choices && out.choices[0] && out.choices[0].message && out.choices[0].message.content;
         if (content) return resolve({ model, content });
+        LAST_CC_ERROR = model + " -> " + JSON.stringify(out).slice(0, 160);
       } catch (e) { /* try next model */ }
     }
     resolve(null);
   });
 }
 
+let LAST_CC_ERROR = "";
 async function generateForecast(sym, bars, lessons) {
   const stats = statsFor(bars);
   const meta = (liveEngine.CFD_SYMBOLS || {})[sym] || {};
@@ -175,12 +181,12 @@ async function generateForecast(sym, bars, lessons) {
     "RULES: Completed-candle structure (EMA20/50, momentum 1/5/10/20d, ATR) dominates the call; seasonality and macro only adjust conviction. If lessons exist, OBEY them and state in executiveSummary how you avoid the top mistake pattern. Anchor: aiFutureCandles Day+1 open MUST equal lastCompletedClose (" + stats.lastCompletedClose + "), each next open equals the previous predicted close.\n" +
     "Return ONLY valid JSON (no markdown): {dailyBias: STRONG BULLISH|BULLISH|NEUTRAL / RANGE|BEARISH|STRONG BEARISH, conviction: 50..94, masterScore: -10..10, forecastForDate: \"" + todayUTC() + "\", headlineThesis, executiveSummary, factorScores:{technicalScore,seasonalityScore,positioningScore,macroRatesScore} (-10..10 each), keyLevels:{biasPivot,entryZone,target1,target2,invalidationStop,riskReward}, whyPillars:[4x{title,verdict,explanation}], intradayPlaybook, aiFutureCandles:[10x{day,date,open,high,low,close,expectedDirection,expectedRangePips,confidencePct,mainDriver}], aiFutureNewsPredictions:[6x{eventTime,currency,eventName,consensusForecast,previousActual,aiPredictedOutcome,expectedAssetImpact,expectedMovePips,probabilityPct,tradingReactionPlan}]}";
   const res = await ccChat([{ role: "user", content: prompt }], 7000);
-  if (!res) return null;
+  if (!res) { LAST_CC_ERROR = "all AI models unreachable/empty"; return null; }
   let obj = null;
   try { obj = JSON.parse(res.content); } catch (e) {
     const m = res.content.match(/\{[\s\S]*\}/); if (m) { try { obj = JSON.parse(m[0]); } catch (e2) {} }
   }
-  if (!obj || !obj.dailyBias) return null;
+  if (!obj || !obj.dailyBias) { LAST_CC_ERROR = "AI returned unparseable JSON"; return null; }
   obj.forecastForDate = todayUTC(); obj.model = res.model + " · CodeCraft (server 24/7)"; obj.generatedBy = "server-closure-engine";
   obj.generatedAt = new Date().toISOString();
   if (Array.isArray(obj.aiFutureCandles) && obj.aiFutureCandles.length) {
@@ -209,10 +215,12 @@ async function runCycle(reason = "schedule") {
     forecasts[today] = forecasts[today] || {};
 
     // 1) Store newly closed candles (authoritative real history, all instruments)
+    const report = { at: new Date().toISOString(), reason, symbols: {} };
     const barsBySym = {};
     for (const sym of ALL_SYMBOLS) {
       const bars = await getCompletedBars(sym).catch(() => []);
       barsBySym[sym] = bars;
+      report.symbols[sym] = { barsFetched: bars.length, lastBar: bars.length ? bars[bars.length - 1].date : null };
       if (bars.length) {
         const map = new Map((closedStore[sym] || []).map(c => [c.date, c]));
         bars.slice(-120).forEach(b => map.set(b.date, { ...b, source: "server-history" }));
@@ -231,15 +239,24 @@ async function runCycle(reason = "schedule") {
       const bars = barsBySym[sym] || [];
       if (bars.length < 30) continue;
       const lessons = computeLessons(ledger, sym);
-      const fc = await generateForecast(sym, bars, lessons).catch(() => null);
+      let fcBars = bars;
+      if (!fcBars || fcBars.length < 30) {
+        // Fallback: generate from the server's stored closed candles so a feed hiccup never blocks the forecast
+        fcBars = (closedStore[sym] || []).map(c => ({ date: c.date, o: c.o, h: c.h, l: c.l, c: c.c }));
+        if (fcBars.length >= 30) report.symbols[sym].forecastSource = "stored-closed-candles (feed fetch failed)";
+      }
+      if (!fcBars || fcBars.length < 30) { report.symbols[sym].forecast = "SKIPPED: only " + (fcBars ? fcBars.length : 0) + " bars available"; continue; }
+      LAST_CC_ERROR = "";
+      const fc = await generateForecast(sym, fcBars, lessons).catch(e => { LAST_CC_ERROR = String(e && e.message || e); return null; });
+      report.symbols[sym].forecast = fc ? ("OK " + fc.dailyBias + " " + fc.conviction + "% via " + fc.model) : ("FAILED: " + (LAST_CC_ERROR || "unknown"));
       if (fc) {
         forecasts[today][sym] = fc; generated++;
-        const lastC = bars[bars.length - 1];
+        const lastC = fcBars[fcBars.length - 1];
         ledger.push({
           symbol: sym, targetDate: today, bias: fc.dailyBias, conviction: Number(fc.conviction || 0), model: fc.model,
           generatedAt: fc.generatedAt, generatedBy: "server",
           predicted: (fc.aiFutureCandles && fc.aiFutureCandles[0]) ? { open: fc.aiFutureCandles[0].open, high: fc.aiFutureCandles[0].high, low: fc.aiFutureCandles[0].low, close: fc.aiFutureCandles[0].close } : null,
-          featuresAtForecast: { momentum20Pct: statsFor(bars).momentum20dPct, prevCandleDirection: lastC.c > lastC.o ? "BULLISH" : lastC.c < lastC.o ? "BEARISH" : "FLAT", seasonality5dPct: Number(((seasonalityCache || {})[sym]?.forecastTable || [])[0]?.predictionPct || 0) },
+          featuresAtForecast: { momentum20Pct: statsFor(fcBars).momentum20dPct, prevCandleDirection: lastC.c > lastC.o ? "BULLISH" : lastC.c < lastC.o ? "BEARISH" : "FLAT", seasonality5dPct: Number(((seasonalityCache || {})[sym]?.forecastTable || [])[0]?.predictionPct || 0) },
           status: "pending", hit: null, mistakeTags: []
         });
         save(F_FORECASTS, forecasts); save(F_LEDGER, ledger.slice(-600));
@@ -252,6 +269,7 @@ async function runCycle(reason = "schedule") {
     Object.keys(forecasts).sort().slice(0, -14).forEach(d => delete forecasts[d]);
     save(F_FORECASTS, forecasts);
 
+    try { fs.writeFileSync(path.join(DATA_DIR, "cycle-report.json"), JSON.stringify(report, null, 1)); } catch (e) {}
     status.lastCycleAt = new Date().toISOString(); status.lastCycleDay = today; status.lastReason = reason;
     status.closedSymbols = Object.keys(closedStore).length;
     status.forecastsToday = Object.keys(forecasts[today]).length;
