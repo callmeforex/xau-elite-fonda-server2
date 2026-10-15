@@ -1,174 +1,175 @@
 {
- "at": "2026-10-14T19:39:08.167Z",
+ "at": "2026-10-15T04:31:08.057Z",
  "reason": "github-actions",
  "symbols": {
   "XAUUSD": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13"
+   "lastBar": "2026-10-14",
+   "forecast": "FAILED: all AI models unreachable/empty"
   },
   "XAGUSD": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "EURJPY": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "EURUSD": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "GBPUSD": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "USDJPY": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "AUDUSD": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "USDCAD": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "USDCHF": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "NZDUSD": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "GBPJPY": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "EURGBP": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "EURAUD": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "AUDJPY": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "EURCHF": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "CADJPY": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "USOIL": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "UKOIL": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "NATGAS": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "COPPER": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "SPX500": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "NAS100": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "US30": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "GER40": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "UK100": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "JPN225": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "DXY": {
    "barsFetched": 400,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "VIX": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-13",
+   "barsFetched": 400,
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "BTCUSD": {
    "barsFetched": 399,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "ETHUSD": {
    "barsFetched": 399,
-   "lastBar": "2026-10-13",
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "NVDA": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-13",
+   "barsFetched": 400,
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "AAPL": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-13",
+   "barsFetched": 400,
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "MSFT": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-13",
+   "barsFetched": 400,
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "TSLA": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-13",
+   "barsFetched": 400,
+   "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   }
  }
