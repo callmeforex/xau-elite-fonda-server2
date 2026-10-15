@@ -1,5 +1,5 @@
 {
- "at": "2026-10-15T04:31:08.057Z",
+ "at": "2026-10-15T17:16:15.235Z",
  "reason": "github-actions",
  "symbols": {
   "XAUUSD": {
@@ -138,7 +138,7 @@
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "VIX": {
-   "barsFetched": 400,
+   "barsFetched": 399,
    "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
@@ -153,22 +153,22 @@
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "NVDA": {
-   "barsFetched": 400,
+   "barsFetched": 399,
    "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "AAPL": {
-   "barsFetched": 400,
+   "barsFetched": 399,
    "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "MSFT": {
-   "barsFetched": 400,
+   "barsFetched": 399,
    "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "TSLA": {
-   "barsFetched": 400,
+   "barsFetched": 399,
    "lastBar": "2026-10-14",
    "forecast": "FAILED: all AI models unreachable/empty"
   }
