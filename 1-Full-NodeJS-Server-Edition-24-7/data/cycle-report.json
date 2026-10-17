@@ -1,5 +1,5 @@
 {
- "at": "2026-10-16T16:52:13.703Z",
+ "at": "2026-10-17T04:19:26.129Z",
  "reason": "github-actions",
  "symbols": {
   "XAUUSD": {
@@ -138,38 +138,38 @@
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "VIX": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-15",
+   "barsFetched": 400,
+   "lastBar": "2026-10-16",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "BTCUSD": {
    "barsFetched": 399,
-   "lastBar": "2026-10-15",
+   "lastBar": "2026-10-16",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "ETHUSD": {
    "barsFetched": 399,
-   "lastBar": "2026-10-15",
+   "lastBar": "2026-10-16",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "NVDA": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-15",
+   "barsFetched": 400,
+   "lastBar": "2026-10-16",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "AAPL": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-15",
+   "barsFetched": 400,
+   "lastBar": "2026-10-16",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "MSFT": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-15",
+   "barsFetched": 400,
+   "lastBar": "2026-10-16",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "TSLA": {
-   "barsFetched": 399,
-   "lastBar": "2026-10-15",
+   "barsFetched": 400,
+   "lastBar": "2026-10-16",
    "forecast": "FAILED: all AI models unreachable/empty"
   }
  }
