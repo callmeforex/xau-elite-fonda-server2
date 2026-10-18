@@ -1,5 +1,5 @@
 {
- "at": "2026-10-17T15:49:35.511Z",
+ "at": "2026-10-18T04:25:02.793Z",
  "reason": "github-actions",
  "symbols": {
   "XAUUSD": {
@@ -144,12 +144,12 @@
   },
   "BTCUSD": {
    "barsFetched": 399,
-   "lastBar": "2026-10-16",
+   "lastBar": "2026-10-17",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "ETHUSD": {
    "barsFetched": 399,
-   "lastBar": "2026-10-16",
+   "lastBar": "2026-10-17",
    "forecast": "FAILED: all AI models unreachable/empty"
   },
   "NVDA": {
